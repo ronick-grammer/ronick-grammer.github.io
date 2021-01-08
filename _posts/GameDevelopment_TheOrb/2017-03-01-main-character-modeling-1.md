@@ -6,9 +6,6 @@ header:
 
 categories:
   - Game Development/The_Orb
-<!-- tags:
-  - Database 
-last_modified_at: 2021-01-04 -->
 ---
 ## 첫 캐릭터 모델링을 하다
 
