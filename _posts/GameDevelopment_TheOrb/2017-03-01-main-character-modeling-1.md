@@ -5,7 +5,7 @@ header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
 categories:
-  - Game Development/The_Orb
+  - Game Development-The Orb
 ---
 ## 첫 캐릭터 모델링을 하다
 
