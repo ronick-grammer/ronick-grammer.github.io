@@ -24,7 +24,7 @@ categories:
 
 3D 캐릭터를 만들기 전에 스캐치를 통해 대략적인 캐릭터 형태를 잡아야 한다.
 
-![주인공 모델링](https://user-images.githubusercontent.com/73280175/104126032-a77ead80-539d-11eb-961a-def50afd40c2.jpg)
+![주인공스캐치](https://user-images.githubusercontent.com/73280175/104126161-5c18cf00-539e-11eb-9688-d277965cac86.jpg)
 
 지금 보니까 정말 못생겼다. 모델링 프로그램은 Maya 라는 3d 그래픽 툴이다. 
 Maya 를 사용한 이유는 범용성이 높다고 생각했다. 한국에서는 3Ds Max 프로그램이 
