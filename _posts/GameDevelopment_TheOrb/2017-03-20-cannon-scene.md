@@ -1,6 +1,10 @@
 ---
 title:  "대포알 피하기 씬 만들기"
 excerpt: "대포알 피하기 씬 만들기"
+
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
