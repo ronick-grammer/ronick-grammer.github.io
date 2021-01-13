@@ -1,6 +1,6 @@
 ---
-title:  "Network Protocol"
-excerpt: "Network Protocol"
+title:  "[OSI참조모델]Network Protocol"
+excerpt: "[OSI참조모델]Network Protocol"
 toc: true
 toc_sticky: true
 
