@@ -1,6 +1,6 @@
 ---
-title:  "TCP/IP 와 UDP/IP"
-excerpt: "TCP/IP 와 UDP/IP"
+title:  "[OSI참조모델]TCP/IP 와 UDP/IP"
+excerpt: "[OSI참조모델]TCP/IP 와 UDP/IP"
 toc: true
 toc_sticky: true
 
