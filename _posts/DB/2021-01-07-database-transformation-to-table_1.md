@@ -1,6 +1,9 @@
 ---
 title:  "논리 데이터 모델의 물리 데이터 모델 변환_1"
 excerpt: "논리 데이터 모델의 물리 데이터 모델 변환_1"
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
