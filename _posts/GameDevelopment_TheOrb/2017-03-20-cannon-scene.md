@@ -16,11 +16,15 @@ categories:
 
 
 
+
+
 ### 필요한 모델 만들기
 
 자, 이제 대략 이렇게 씬을 잡았으니 이제 씬에 필요한 대포를 만들어 보자.
 
 ![cannon_modeling_maya](https://user-images.githubusercontent.com/73280175/104127716-10b6ee80-53a7-11eb-935b-3c04a0b6ae84.jpg)
+
+
 
 
 
