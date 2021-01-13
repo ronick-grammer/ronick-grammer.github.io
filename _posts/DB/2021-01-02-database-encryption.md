@@ -1,6 +1,9 @@
 ---
 title:  "데이터 베이스 보안 / 암호화"
 excerpt: "데이터 베이스 보안 / 암호화"
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
