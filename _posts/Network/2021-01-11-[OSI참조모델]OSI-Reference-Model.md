@@ -1,6 +1,6 @@
 ---
-title:  "OSI 참조 모델"
-excerpt: "OSI 참조 모델"
+title:  "[OSI참조모델]OSI 참조 모델"
+excerpt: "[OSI참조모델]OSI 참조 모델"
 toc: true
 toc_sticky: true
 
