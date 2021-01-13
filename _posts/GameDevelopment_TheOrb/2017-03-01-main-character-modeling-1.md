@@ -1,6 +1,9 @@
 ---
 title:  "주인공 캐릭터 모델링"
 excerpt: "주인공 캐릭터 모델링"
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
