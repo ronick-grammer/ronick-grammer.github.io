@@ -1,6 +1,9 @@
 ---
 title:  "데이터 베이스 이중화(Database Replication)"
 excerpt: "데이터 베이스 이중화(Database Replication)"
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
