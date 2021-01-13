@@ -1,6 +1,9 @@
 ---
 title:  "스토리지(Storage)"
 excerpt: "스토리지(Storage)"
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
