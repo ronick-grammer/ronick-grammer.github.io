@@ -1,6 +1,9 @@
 ---
 title:  "데이터베이스 백업(Database Backup)"
 excerpt: "데이터베이스 백업(Database Backup)"
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
