@@ -1,6 +1,9 @@
 ---
 title:  "TCP/IP 와 UDP/IP"
 excerpt: "TCP/IP 와 UDP/IP"
+toc: true
+toc_sticky: true
+
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
