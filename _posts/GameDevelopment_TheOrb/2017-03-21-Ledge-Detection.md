@@ -1,5 +1,5 @@
 ---
-title:  "Ledge Detector 구현하기"
+title:  "Ledge Detection 구현하기"
 excerpt: "Ledge Detector"
 
 toc: true
