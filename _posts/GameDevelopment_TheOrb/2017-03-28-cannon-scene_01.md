@@ -1,6 +1,6 @@
 ---
-title:  "대포알 피하기 씬 만들기"
-excerpt: "대포알 피하기 씬 만들기"
+title:  "대포알 피하기 씬 만들기 1"
+excerpt: "대포알 피하기 씬 만들기 1"
 
 toc: true
 toc_sticky: true
