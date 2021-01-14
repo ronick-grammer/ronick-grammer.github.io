@@ -10,6 +10,10 @@ header:
 tags:
   - Ledge Detection
   - Ledge
+  - Solo Game Development
+  - 1인 게임 개발
+  - Unity
+  - Maya
 categories:
   - Game Development-The Orb
 ---
