@@ -20,7 +20,8 @@ categories:
 
 감시 카메라 씬에 사용될  감시 카메라 모델링 위해 대략 모델을 스케치한 후 마야에서 감시 카메라를 만들었다. .<br>
 
-![감시카메라 모델링](https://user-images.githubusercontent.com/73280175/104845909-27b38e80-591b-11eb-82fb-767e777641a6.jpg)
+![감시카메라 모델링_](https://user-images.githubusercontent.com/73280175/104846606-bbd32500-591e-11eb-8226-f89c91ead83f.jpg)
+
 
 <br><br>
 
