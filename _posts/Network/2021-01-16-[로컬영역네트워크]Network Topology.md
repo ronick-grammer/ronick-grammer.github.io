@@ -9,7 +9,6 @@ header:
 
 categories:
   - Network
-  - Network Topology
 tags:
   - Network
   - Network Topology
