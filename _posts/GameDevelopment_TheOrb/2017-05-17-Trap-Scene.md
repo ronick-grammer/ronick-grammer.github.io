@@ -41,7 +41,7 @@ categories:
 
 ![trap_2](https://user-images.githubusercontent.com/73280175/104933232-040c4900-59ec-11eb-8cb9-45a0092ba76b.gif)
 
-<br><br>
+<br>
 
 ## 아직은 잘 느껴지지 않았던 것
 
