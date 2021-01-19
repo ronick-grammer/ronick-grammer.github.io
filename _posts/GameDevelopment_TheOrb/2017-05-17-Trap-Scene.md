@@ -33,15 +33,14 @@ categories:
 
 ![trap_1](https://user-images.githubusercontent.com/73280175/104933226-02428580-59ec-11eb-86f0-e5ae34c0a38d.gif)
 
-<br><br>
+<br>
 
 ## 가족의 격려와 응원 씬 in Unity
 
-주인공이 절망에 빠졌을 때, 가족들이 격려와 응원을 해주는 눈물나는 감동적인 장면이다.
+주인공이 절망에 빠졌을 때, 가족들이 격려와 응원을 해주는 눈물나게 감동적인 장면이다.
 
 ![trap_2](https://user-images.githubusercontent.com/73280175/104933232-040c4900-59ec-11eb-8cb9-45a0092ba76b.gif)
 
-<br>
 
 ## 아직은 잘 느껴지지 않았던 것
 
