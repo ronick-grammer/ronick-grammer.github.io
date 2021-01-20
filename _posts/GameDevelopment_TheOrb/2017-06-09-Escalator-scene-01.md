@@ -1,6 +1,6 @@
 ---
-title:  "에스컬레이터 씬 "
-excerpt: "에스컬레이터 씬"
+title:  "에스컬레이터 모델링과 애니메이션"
+excerpt: "에스컬레이터 머델링과 애니메이션"
 toc: true
 toc_sticky: true
 
