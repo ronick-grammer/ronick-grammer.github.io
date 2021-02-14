@@ -25,7 +25,7 @@ lower_bound 함수는 key 보다 큰 값의 위치, 즉 key 값을 초과하는 
 
 ### 사용 예
 정수 벡터를 사용한 예가 가장 이해하기 쉽겠지만 그건 너무 쉬우니 string 벡터를 활용한 두 함수의 사용 예를 들어보았다. 아래 사용 예는 카카오 신입 공채 문제중 하나인 
-'[가사 검색]'(https://programmers.co.kr/learn/courses/30/lessons/60060) 문제에서 활용될 수 있다.
+[가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060) 문제에서 활용될 수 있다.
 
 
 ```c++
