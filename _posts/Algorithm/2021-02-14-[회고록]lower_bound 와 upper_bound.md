@@ -15,7 +15,7 @@ last_modified_at: 2021-01-04 -->
 ---
 # lower_bound 와 upper_bound
 이진 탐색과 관련하여 아주 유용한 C++ STL 함수가 있다. lower_bound(begin, end, key) 와 upper_bound(begin, end, key) 이다. 이 두 함수는 이진 탐색을 활용하여 key 값을 기준으로 값을 찾고 
-그 위치를 반환한다. 
+그 위치를 반환한다. 물론 이진 탐색을 기반으로한 STL 함수이기 때문에 !!!반드시!!! 정렬후에 사용하여야 한다.
 <br>
 ### lower_bound(begin, end, key)
 lower_bound 함수는 key 이상인 값의 위치, 즉 key 값 이상이거나 같은 값의 최초 위치를 반환한다.
@@ -37,7 +37,7 @@ int main(void){
     v.push_back("frame");
     v.push_back("kakao");
 
-    sort(v.begin(), v.end());
+    sort(v.begin(), v.end()); // 이진 탐색을 진행할 것이기에 오름차순 정렬
     //frame, frodo, front, frost, kakao 순으로 정렬됨
     vector<string>::iterator s1 = upper_bound(v.begin(), v.end(), "frozz");
     vector<string>::iterator s2 = lower_bound(v.begin(), v.end(), "froaa");
