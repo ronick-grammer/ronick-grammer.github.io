@@ -26,8 +26,8 @@ categories:
 대표적으로는 아래 세 가지가 주로 사용된다. 왼쪽순으로 Box Collider, Sphere Collider, Character Controller 라 불린다 
 <br><br>
 이 밖에 Mesh Collider 라는 콜라이더 종류 중 하나가 있는데, 오브젝트의 mesh, 즉 전체 오브젝트의 형태에 맞게 자동으로 Collider 형태가 들어 지는 것을 말한다. 그러나 이 방법은 게임의 퍼포먼스 면에서 
-최악을 자랑하므로 사용하는 것을 권하지 않는다. Mesh Collider 는 오브젝트 형태에 맞게 수 많은 vertext(버텍스)를 생성하고 연결하는 방식으로 Collider 를 생성하기 때문에 
-Collider 자체가 수학적인 연산을 계속해서 수행하는 만큼 게임의 최적화에 방해가 된다. 그렇기 때문에 최소한의 vertext 를 가지는 아래의 다른 세 가지(box collider 등)가 사용되는 것이 좋다.
+최악을 자랑하므로 사용하는 것을 권하지 않는다. Mesh Collider 는 오브젝트 형태에 맞게 수 많은 vertex(버텍스)를 생성하고 연결하는 방식으로 Collider 를 생성하기 때문에 
+Collider 자체가 수학적인 연산을 계속해서 수행하는 만큼 게임의 최적화에 방해가 된다. 그렇기 때문에 최소한의 vertex 를 가지는 아래의 다른 세 가지(box collider 등)가 사용되는 것이 좋다.
 
 <p align="center">
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/1-2-overlapping checker/unity-collider-types.png">
