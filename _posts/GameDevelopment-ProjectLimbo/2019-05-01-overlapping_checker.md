@@ -44,7 +44,7 @@ Collider Component 는 다른 물체와 충돌할 때마다 충돌 여부 함수
 
 
 ## Overlapping Checker 구현
-아래 gif 에서는 안나타나지만 저 절벽 오브젝트에는 Box Collider Component 가 부착되어 있다. 플레이어 캐릭터는 총 세 개의 Overlapping Checker 가 있는다
+아래 gif 에서는 안나타나지만 저 절벽 오브젝트에는 Box Collider Component 가 부착되어 있다. 플레이어 캐릭터는 총 세 개의 Overlapping Checker 가 있다
 - checkGrounded_above: 충돌 여부를 확인하는 Overlapping Checker 로서 '위'에 있는 오브젝트의 충돌을 감지한다. 예) 점프를 했을 때 천장에 닿으면 바로 떨어지게 하도록
 - checkGrounded_bottom: 충돌 여부를 확인하는 Overlapping Checker 로서 '아래'에 있는 오브젝트의 충돌을 감지한다. 예) 바닥에 닿아있는지 항상 확인을 한다. 착지 했을 때 착지 애니메이션 발동
 - checkGrounded_front: 충돌 여부를 확인하는 Overlapping Checker 로서 '정면'에 있는 오브젝트의 충돌을 감지한다. 예) 앞으로 점프 했을때 벽과 충돌하면 바로 착지 하도록
