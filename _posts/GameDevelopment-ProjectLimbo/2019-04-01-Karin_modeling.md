@@ -31,7 +31,7 @@ categories:
 하지만 스캐치한 캐릭터와 똑같이 모델링을 하지 않았다. 우선 머리를 단발로 하였는데, 애니메이션 모션을 만들 때마다 항상 머리카락의 찰랑거림을 처리해줘야 하는게 시간적으로 부담스러웠다.
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/1-1-Karin_modeling/Karin_modeling_maya.jpg" width="90%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/1-1-Karin_modeling/Karin_modeling_maya.jpg">
 </p>
 
 
@@ -41,7 +41,7 @@ categories:
 
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/1-1-Karin_modeling/Karin_Modeling_Blink_Maya.gif" width="90%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/1-1-Karin_modeling/Karin_Modeling_Blink_Maya.gif">
 </p>
 
 
