@@ -26,7 +26,7 @@ categories:
 <br>
 
 [프로젝트 포폴](https://github.com/ronick-grammer/PORTFOLIO_GAME_ProjectLimbo)
-<img src = "https://github.com/ronick-grammer/PORTFOLIO_GAME_ProjectLimbo/blob/main/detectionController.gif" width="70%">
+<img src = "https://github.com/ronick-grammer/PORTFOLIO_GAME_ProjectLimbo/blob/main/thumbnail_animation.gif">
 
 
 
