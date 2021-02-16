@@ -29,11 +29,12 @@ categories:
 마네킹을 없애고 새로 만드는 것이 아니라, 옷을 바꾸면 되는 것이다. 이것을 3D 모델링 작업에도 적용을 해보고자 하였다.
 <br><br>
 인간형 캐릭터 3D 모델링 작업을 할 경우 기초 신체 부분들을 각각 분리하여 나중에 다른 캐릭을 모델링 할 때에 재사용한다. 그 요점들은 다음과 같다. 참고로 Maya 에서 작업할 때의 상황이다.
-<br>
+<br><br>
 
 <p align="center">
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/5.5-modelingPartition/modelingPartition_sketch.jpg" width="70%">
 </p>
+<br>
 
 1. 각 신체 부분을 모델링한다. 이때 각 부분들은 Combine 하지 않고 분리된 상태로 둔다.
 2. 각 분리된 신체 부분들이 Append될 곳들의 Edge와 Vertex 갯수를 정확히 맞춘다.
