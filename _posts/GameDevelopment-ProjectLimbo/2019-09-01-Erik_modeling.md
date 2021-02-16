@@ -27,10 +27,9 @@ categories:
 </p>
 
   
-## Ballbat 공격 패턴 구현 in Unity
-
-
+## 캐릭터 Erik 모델링 in Maya
+일반적인 인간형 캐릭터이기에 그렇게 어려운 모델링은 아니었다. 조금 다른게 있다면 넥타이를 착용하고 있기에 애니메이션을 위해 이 넥타이에 대한 리깅도 따로 해줬다는 것 정도이다.
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/4-ballBatsAttckPattern/ballBatsAttack.gif">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/5-Erik_modeling/Erik_modeling_Maya.jpg">
 </p>
 
