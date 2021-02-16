@@ -23,7 +23,7 @@ categories:
 주인공 Karin 과 마찬가지로 알수 없는 이유로 숲 속에 있는 캐릭터 Erik 을 구상하였다. Erik은 평범한 직장인 컨셉으로 스캐치를 하였다.
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/5-Erik_modeling/Erik_modeling.jpg" width="40%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/5-Erik_modeling/Erik_modeling.jpg" width="70%">
 </p>
 
   
