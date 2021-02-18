@@ -1,5 +1,5 @@
 ---
-title:  "NPC Rato 모델링하기 "
+title:  "NPC Rato 모델링"
 excerpt: "NPC Rato 모델링"
 toc: true
 toc_sticky: true
