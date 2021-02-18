@@ -34,7 +34,7 @@ categories:
 <br>
 
 ## Detection Controller
-본 게임 프로젝트가 3D Side Scrolling 게임 이다 보니 캐릭터가 움직일 수 있는 방향은 x 축과 y 축 뿐이다. 그렇기 때문에 몬스터들 역시 같은 x축에 두는 것이 일반적이긴 하나, 
+본 게임 프로젝트가 3D Side Scrolling 게임 이다 보니 플레이어가 움직일 수 있는 방향은 x 축과 y 축 뿐이다. 그렇기 때문에 몬스터들 역시 같은 x축에 두는 것이 일반적이긴 하나, 
 현재 이 게임의 그래픽은 3D 이기 때문에 이러한 특성을 잘 살리고 싶었다. 그 특성이란 바로 z 축을 활용하는 것! Tall Watcher 는 z 축에 위치시켜 Karin을 찾게 하면 더욱 실감나게 숨고
 도망치는 플레이를 유도할 수 있을거라 생각했다.
 <br><br>
@@ -46,7 +46,7 @@ categories:
 <br>
 
 ## PathFollow Controller
-Tall Watcher가 공격을 마치고 원래 위치로 돌아가기 위한 스크립트를 작성해야 했는데 우선 Unity의 Navogation 기능을 이용하여 Path의 첫위치로 다시 돌아가도록 하도록 하였다.
+Tall Watcher가 공격을 마치고 원래 위치로 돌아가기 위한 스크립트를 작성해야 했는데 우선 Unity의 Navigation 기능을 이용하여 Path의 첫위치로 다시 돌아가도록 하도록 하였다.
 그러면 Tall Watcher는 다시 path 를 따라서 움직이면서 플레이어를 감지할 것이다.
 
 <p align="center">
