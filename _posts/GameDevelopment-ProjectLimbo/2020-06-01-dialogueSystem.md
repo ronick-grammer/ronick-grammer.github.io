@@ -55,7 +55,6 @@ categories:
 (Dialogue)
 </p>
 <br>
-<br>
 
 바로 위에 있는 사진은 Dialogue Trigger로 특정 씬에 대한 대사들을 담는 컨테이너라고 보면 된다. Dialogue Trigger의 인스펙터 변수들의 설명은 아래와 같다.
 
