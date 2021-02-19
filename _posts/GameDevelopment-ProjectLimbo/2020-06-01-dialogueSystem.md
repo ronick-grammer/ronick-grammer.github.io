@@ -37,7 +37,7 @@ categories:
 
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Dialogue/dialogue_system.jpg">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Dialogue/dialogue_system.jpg" width="70%">
 </p>
 
 <p align="center">
