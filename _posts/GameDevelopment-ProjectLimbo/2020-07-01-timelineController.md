@@ -59,7 +59,7 @@ categories:
 - Script_Dialogue Trigger: Has Dialogue 인스펙터 변수가 true 라면 나타나며, 특정 씬의 대사들을 담은 컨테이너이다.
 - StartTime: 타임라인이나 대화를 현재 타임라인이 실행되고 몇초 뒤에 실행할 것인지에 대한 인스펙터 변수
 
-## Dialogue System in Unity
+## Timeline in Unity
 
 위의 구상과 구현을 바탕으로 나온 결과이다.
 
