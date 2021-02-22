@@ -63,7 +63,7 @@ categories:
 - Start With Button: 특정 버튼을 눌러서 대화를 시작할지 말지를 결정한다.
 - Start With Facing Right: 플레이어가 오른쪽을 바라보고 있을때 대화를 시작한다.
 - Start With Facing Left: 플레이어가 왼쪽을 바라보고 있을때 대화를 시작한다. Start With Facing Right 역시 true 라면 양쪽 어느쪽이어도 대화를 시작한다.
-- Dialogue: 캐릭터들의 여러 대사를 적을 수 있다. (캐릭터 이름) : (대사) 처럼 ':' 을 기준으로 왼쪽 텍스트는 노란색으로 오른쪽은 검은색으로 나눈다.
+- Dialogue: 캐릭터들의 여러 대사를 적을 수 있다. (캐릭터 이름) : (대사) 처럼 ':' 을 기준으로 왼쪽 텍스트(캐릭터 이름)는 노란색으로 오른쪽(대사)은 흰색으로 나눈다.
 - Get Item: 해당 대화가 끝나면 특정 아이템을 얻는다.
 - Start Timeline After Dialogue: 대화가 끝난 후 특정 타임라인 씬을 실행한다.
 
