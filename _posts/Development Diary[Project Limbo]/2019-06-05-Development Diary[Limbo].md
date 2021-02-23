@@ -1,0 +1,30 @@
+---
+title:  "[프로젝트 림보]개발일지(2019-06-05)"
+excerpt: "[프로젝트 림보]개발일지(2019-06-05)"
+toc: true
+toc_sticky: true
+
+header:
+  teaser: /assets/images/bio-photo-keyboard-teaser.jpg
+
+tags:
+  - Solo Game Development
+  - 1인 게임 개발
+  - Unity
+  - Maya
+
+categories:
+  - Development Diary [Project Limbo]
+---
+
+## Done-List
+- 첫 씬에 보여질 Cliff 모델링
+
+## To-Do-List
+- Dialogue System 구현
+- Timeline System 구현
+- 첫 씬에서 에릭과 만나기 전의 배경 모델링 필요
+- 카린의 애니메이션 모션 추가 구현 필요
+
+
+
