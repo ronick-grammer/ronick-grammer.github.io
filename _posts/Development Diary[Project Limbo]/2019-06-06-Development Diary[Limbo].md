@@ -1,0 +1,31 @@
+---
+title:  "[프로젝트 림보]개발일지(2019-06-06)"
+excerpt: "[프로젝트 림보]개발일지(2019-06-06)"
+toc: true
+toc_sticky: true
+
+header:
+  teaser: /assets/images/bio-photo-keyboard-teaser.jpg
+
+tags:
+  - Solo Game Development
+  - 1인 게임 개발
+  - Unity
+  - Maya
+
+categories:
+  - Development Diary [Project Limbo]
+---
+
+## Done-List
+
+### Timeline Controller
+- Box Collider에 Trigger 되면 특정 Timeline 실행
+- 애니메이션 Root Motion 작동을 위한 Animator Component의 Setting 값과 Timeline Animation Track의 Setting 값 조정
+
+## To-Do-List
+- Timeline Controller 추가 구현
+- Dialogue Controller도 구현해야하며 Timeline Controller와 상호 호환 및 연동 필요
+
+
+
