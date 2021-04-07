@@ -91,5 +91,13 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 바로 배포 기본 소스를 설정하는 것이 아니라 Azure CLI(Command Line Interface)를 이용해서 로컬에서 배포를 해서 반영하는 것이다.
 디음 포스트에 쓰기로 한다..
 
+<br>
+<br>
+
+#### 출처
+- [Publishing Java packages with Gradle](https://docs.github.com/en/actions/guides/publishing-java-packages-with-gradle)
+- [Deploying to Azure App Service](https://docs.github.com/en/actions/guides/deploying-to-azure-app-service)
+- [Building and testing Java with Gradle](https://docs.github.com/en/actions/guides/building-and-testing-java-with-gradle)
+
 
 
