@@ -75,7 +75,7 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 - 'path:' Gradle 은 빌드 후 생성된 .Jar , .War 같은 파일들을 'build/libs' 폴더 밑에 위치시킨다. 
 
 <br>
-그리고 나서 build.gradle 로 가서 plugin 안에 한 줄을 추가해준다. <span style="color:red">id: 'war'</span> <br>
+그리고 나서 build.gradle 로 가서 plugin 안에 한 줄을 추가해준다. <span style="color:red">id: 'war'</span> <br><br>
 
 <p align="center">
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/5.png" width="70%">
