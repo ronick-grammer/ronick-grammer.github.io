@@ -42,7 +42,7 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 <p align="center">
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/1.png" width="70%">
 </p>
-<p align="center">(수 많은 시도와 실패의 흔적..)</p><br><br>
+<p align="center">(수 많은 시도와 실패의 흔적..)</p>
 
 빌드에 실패한 내용을 보도록 하자. 아래에 보이듯이 <span style="color:red">Build with Maven</span>에서 실패를 하였다. Gradle 프로젝트인데 Maven 으로 빌드를 시도하니
 실패는 당연한 결과다.
