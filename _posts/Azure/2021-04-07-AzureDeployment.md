@@ -15,13 +15,11 @@ last_modified_at: 2021-01-04 -->
 ---
 
 ### 결론적으로는 깃허브 소스를 Azure 를 이용해 서버에 배포하기는 '실패'하였다.
-"정확히는 배포는 성공을 했는데 반영에는 실패하였다. 그리고 원인을 찾지 못하였다" 가 되겠다. 우선 깃허브 리포지토리의 스펙을 적자면 다음과 같다.<br><br>
+"정확히는 배포는 성공을 했는데 반영에는 실패하였다. 그리고 원인을 찾지 못하였다" 가 되겠다. 우선 깃허브 리포지토리의 스펙을 적자면 다음과 같다.<br>
 
 - 프레임 워크: Spring
 - 언어: 자바
 - 빌드 도구: Gradle (중요)
-
-<br>
 
 그리고 배포하는 과정의 배경은 다음과 같다.<br><br>
 
@@ -35,7 +33,6 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 
 - 워크 플로우 파일 위치: root/.github/workflows/{App Service 이름}.yml
 
-<br>
 
 워크 플로우 파일의 역할은 간단히 말해 Azure 가 항상 리포지토리의 작업 상황을 감시한다. 변경이 생기면 바로 빌드를 하고 배포하여 웹 서버에 반영을 할 수 있게 해주는 것이다.<br>
 그런데 이 워크 플로우 파일에 설정된 빌드 도구는 Maven 이다. 다시 말해 만약 우리가 Gradle 빌드 도구를 사용해서 Spring 프로젝트를 만든 것이라면 배포도 전에 빌드 과정에서 실패를 한다.
@@ -45,7 +42,7 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 <p align="center">
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/1.png" width="70%">
 </p>
-(수 많은 시도와 실패의 흔적..)<br><br>
+<p align="center">(수 많은 시도와 실패의 흔적..)</p><br><br>
 
 빌드에 실패한 내용을 보도록 하자. 아래에 보이듯이 <span style="color:red">Build with Maven</span>에서 실패를 하였다. Gradle 프로젝트인데 Maven 으로 빌드를 시도하니
 실패는 당연한 결과다.
@@ -87,8 +84,8 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 <p align="center">
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/6.png" width="70%">
 </p>
+<p align="center">(성공!!! 그러나..)</p>
 <br>
-(성공!!! 그러나..)
 
 ### 배포는 되었으나 반영이 안된다.
 이유가 무엇인지 며칠을 검색해 보았지만 찾지 못하였다.. 캐시도 삭제해보고 별걸 다해봤으나 소용이 없었다. 그래서 다른 방법을 쓰기로 했다. <br>
