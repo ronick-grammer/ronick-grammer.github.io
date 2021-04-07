@@ -85,7 +85,6 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/6.png" width="100%">
 </p>
 <p align="center">(성공!!! 그러나..)</p>
-<br>
 
 ### 배포는 되었으나 반영이 안된다.
 이유가 무엇인지 며칠을 검색해 보았지만 찾지 못하였다.. 캐시도 삭제해보고 별걸 다해봤으나 소용이 없었다. 그래서 다른 방법을 쓰기로 했다. <br>
