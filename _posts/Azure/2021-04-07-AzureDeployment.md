@@ -48,7 +48,7 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 실패는 당연한 결과다.
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/2.png" width="70%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/2.png" width="100%">
 </p>
 <br>
 
@@ -56,14 +56,14 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 무척 간단하다. Gradle 프로젝트를 그에 맞게 Gradle 로 빌드를 해주면 된다. 그 전에 참고로 내가 만든 Azure App Service 를 만들 때의 스택은 다음과 같다.
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/3.png" width="50%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/3.png" width="60%">
 </p>
 
 <br>
 이를 바탕으로 배포 기본 소스를 깃허브 리포지토리로 설정을 하면 아래내용(일부만 캡쳐)으로 워크 플로우 파일이 생성되고 핵심적으로 바꾸어야 할 부분은 빨간박스에 표시해 두었다.
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/4.png" width="70%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/4.png" width="80%">
 </p>
 <br>
 
@@ -75,14 +75,14 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 그리고 나서 build.gradle 로 가서 plugin 안에 한 줄을 추가해준다. <span style="color:red">id: 'war'</span> <br><br>
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/5.png" width="70%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/5.png" width="80%">
 </p>
 <br>
 
 모든 설정을 완료하고 커밋 푸시를 하면 새로 빌드를 시작하고 배포를 한다.
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/6.png" width="70%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/6.png" width="100%">
 </p>
 <p align="center">(성공!!! 그러나..)</p>
 <br>
