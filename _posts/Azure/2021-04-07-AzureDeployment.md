@@ -94,7 +94,7 @@ Azure는 3번을 수행할 때 기본 소스를 깃허브로 설정을 하면 �
 <br>
 <br>
 
-#### 출처
+#### 참고 자료
 - [Publishing Java packages with Gradle](https://docs.github.com/en/actions/guides/publishing-java-packages-with-gradle)
 - [Deploying to Azure App Service](https://docs.github.com/en/actions/guides/deploying-to-azure-app-service)
 - [Building and testing Java with Gradle](https://docs.github.com/en/actions/guides/building-and-testing-java-with-gradle)
