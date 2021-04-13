@@ -82,3 +82,6 @@ Action 탭에 들어가 빌드(Build)와 배포(Deploy)의 워크플로우를 �
 <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/build and deploy success.png" width="100%">
 </p>
 
+#### 참고자료
+- [Migrate from ASP.NET Core 2.0 to 2.1](https://docs.microsoft.com/en-us/aspnet/core/migration/20_21?view=aspnetcore-5.0)
+
