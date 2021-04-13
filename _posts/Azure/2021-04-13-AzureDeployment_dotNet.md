@@ -21,7 +21,7 @@ Action 탭에 들어가 빌드(Build)와 배포(Deploy)의 워크플로우를 �
 
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/deploy Error.png" width="100%">
+<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Azure/deploy Error01.png" width="100%">
 </p>
 <p align="center">(예전에는 안뜨던 에러가 뜬다)</p><br>
 
