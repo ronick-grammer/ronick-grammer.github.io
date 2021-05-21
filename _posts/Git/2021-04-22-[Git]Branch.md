@@ -22,7 +22,6 @@ last_modified_at: 2021-01-04 -->
 브랜치 목록보기    : $git branch 
 브랜치 전환하기    : $git checkout <branch name>
 브랜치 삭제하기    : $git banch -d <branch name>
-
 ```
 
 ## 실사용 예시
@@ -38,11 +37,8 @@ $git checkout class/#1                                     // class/#1 브랜치
 $git checkout -b class/#1_Ronick                           // class/#1_Ronick 이라는 브랜치를 생성하고 동시에 이동
 $git commit -a -m "commit"                                 // 현재 class/#1_Ronick 브랜치에 있으므로 "commit'이라는 메시지를 커밋하여 변경사항을 저장
 $git push origin class/#1_Ronick                           // 위에서 생성한 원격 저장소 'origin'의 class/#1_Ronick 브랜치에 변경된 코드 사항들을 업로드
-
 ```
 
 ### 참고로,
 * 원격 저장소의 브랜치를 못찾았을 경우 '$git remote update' 를 실행한다. 원격 저장소에서 새로운 브랜치가 올라왔는데 못찾는 경우 그 정보를 업데이트 해줘야 한다.
-* 원격 저장소의 브랜치를 checkout 하여 참고하면 cmmmit, push 할 수 없다. 
-
-
+* 원격 저장소의 브랜치를 단순 checkout 하여 참고하면 cmmmit, push 할 수 없다.
