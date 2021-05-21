@@ -21,8 +21,7 @@ last_modified_at: 2021-01-04 -->
 - @Mock : 가짜 객체를 만든다. 어느정도 의존성이 필요하지 않을 때 사용하며 직접 DI를 해주어야 한다.
 - @InjectMocks : @Mock 으로 가짜 객체가 된 기존에 의존하는 객체를 주입받는다. 
 
-- @MockBean : 스프링의 Application Context가 해당 객체를 Mock 객체 빈으로 등록하며 이 @MockBean으로 선언된 객체와 같은 이름과 타입으로 이미 빈이 등록되어 있다면 해당 빈은 선언한 @MockBean으로 대체된다. 의존성이 있는 객체를 테스트 할 때 사용된다.
-<br>
+- @MockBean : 스프링의 Application Context가 해당 객체를 Mock 객체 빈으로 등록하며 이 @MockBean으로 선언된 객체와 같은 이름과 타입으로 이미 빈이 등록되어 있다면 해당 빈은 선언한 @MockBean으로 대체된다. 의존성이 있는 객체를 테스트 할 때 사용된다.<br>
 \* 참고로 MockBean 의 사용 예시를 보고 또보고 수백번을 봐도 동작과정이 이해가 안된다..
 
 ```java
