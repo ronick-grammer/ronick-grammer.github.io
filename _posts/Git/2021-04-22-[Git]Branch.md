@@ -25,7 +25,7 @@ last_modified_at: 2021-01-04 -->
 ```
 
 ## 실사용 예시
-원격 저장소에 있는 브랜치를 기초로 새로운 브랜치를 만들어 변경사항을 커밋과 푸시를 해보자.<br><br>
+원격 저장소에 있는 브랜치를 기초로 새로운 브랜치를 만들어 변경사항을 커밋과 푸시를 해보자.<br>
 
 원격 저장소: https://github.com/learn/programmer <br>
 브랜치    : main(default) -> class/#1
