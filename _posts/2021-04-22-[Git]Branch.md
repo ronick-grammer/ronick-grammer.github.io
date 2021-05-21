@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
 categories:
-  - OS
+  - Git
 <!-- tags:
   - Database 
 last_modified_at: 2021-01-04 -->
