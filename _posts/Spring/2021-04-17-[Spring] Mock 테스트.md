@@ -16,7 +16,8 @@ last_modified_at: 2021-01-04 -->
 ## Mock과 가짜 객체
 
 ### 단위 테스트를 하려는데 외부 모듈과 연동하는 객체에 의존한다면 어떻게 테스트를 하는 것이 효율 적일까?
-스프링에서 테스트를 하려다 보면 외부 모듈과 연동이 되어 있기 때문에 테스트를 하기가 좀 까다로울 수가 있다. 예를 들어 userService가 userRepository에 의존하고 있고 userRepository에서 DB 데이터를 다룬다면, userService의 일반적인 테스트코드를 작성하고 실행했을 때, userService와 userRepository 사이에 의존성이 존재하므로 실제 DB 와의 연동이 불가피하다. 단순히 userService 로직이 정확히 동작하는지 확인만 하고자 할 때, 불필요한 DB 연동없이 테스트 코드를 작성할 수 있게 하려면 우리는 DB 와 연동하여 데이터를 조작하는 코드를 담고있는 userRepository를 가짜 객체로 만들어야 한다. 이렇게 하면 userRepository는 빈껍데기인 가짜객체가 되고 DB와 연동이 일어나지 않으므로 효율적으로 테스트를 진행할 수 있다. 다만 userRepository가 아무런 기능도 하지 않는 빈껍데기가 되어버린 가짜 객체가 되었기 때문에, userService 내에서 userRepository의 특정 메서드를 호출하면 우리가 대신해서 호출된 메서드에서는 특정값을 반환한다는 것을 명시해주어야만 한다. 
+스프링에서 테스트를 하려다 보면 외부 모듈과 연동이 되어 있기 때문에 테스트를 하기가 좀 까다로울 수가 있다. 예를 들어 userService가 userRepository에 의존하고 있고 userRepository에서 DB 데이터를 다룬다면, userService의 일반적인 테스트코드를 작성하고 실행했을 때, userService와 userRepository 사이에 의존성이 존재하므로 실제 DB 와의 연동이 불가피하다. <br><br>
+단순히 userService 로직이 정확히 동작하는지 확인만 하고자 할 때, 불필요한 DB 연동없이 테스트 코드를 작성할 수 있게 하려면 우리는 DB 와 연동하여 데이터를 조작하는 코드를 담고있는 userRepository를 가짜 객체로 만들어야 한다. 이렇게 하면 userRepository는 빈껍데기인 가짜객체가 되고 DB와 연동이 일어나지 않으므로 효율적으로 테스트를 진행할 수 있다. 다만 userRepository가 아무런 기능도 하지 않는 빈껍데기가 되어버린 가짜 객체가 되었기 때문에, userService 내에서 userRepository의 특정 메서드를 호출하면 우리가 대신해서 호출된 메서드에서는 특정값을 반환한다는 것을 명시해주어야만 한다. 
 
 - @Mock : 가짜 객체를 만든다. 어느정도 의존성이 필요하지 않을 때 사용하며 직접 DI를 해주어야 한다.
 - @InjectMocks : @Mock 으로 가짜 객체가 된 기존에 의존하는 객체를 주입받는다. 
