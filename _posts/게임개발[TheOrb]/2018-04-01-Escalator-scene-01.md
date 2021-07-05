@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## 에스컬레이터 씬 만들기 in Maya
 
