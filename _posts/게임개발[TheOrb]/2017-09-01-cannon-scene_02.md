@@ -14,7 +14,7 @@ header:
 
 
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## 대포알에 의해 죽는 애니메이션 만들기
 
