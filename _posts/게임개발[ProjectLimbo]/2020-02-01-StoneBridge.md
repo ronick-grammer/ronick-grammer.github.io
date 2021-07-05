@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-Project Limbo
+  - 게임개발[ProjectLimbo]
 ---
 
 ## 몬스터 Tall Watcher를 물리칠 방법 구상하기
