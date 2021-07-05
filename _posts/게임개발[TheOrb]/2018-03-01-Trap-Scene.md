@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## 톱니 바퀴 함정 씬 구상 in Maya
 
