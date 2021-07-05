@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## 첫 캐릭터 모델링을 하다
 
