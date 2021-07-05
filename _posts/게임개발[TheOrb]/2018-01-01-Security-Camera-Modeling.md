@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## 감시 카메라 모델링하기
 
