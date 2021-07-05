@@ -13,7 +13,7 @@ tags:
   - Unity
   - Maya
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## 대포알 피하기 씬 구상
 
