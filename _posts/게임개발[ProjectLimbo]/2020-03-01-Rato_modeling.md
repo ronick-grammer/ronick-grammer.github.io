@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-Project Limbo
+  - 게임개발[ProjectLimbo]
 ---
 
 ## Rato 캐릭터 구상하기
