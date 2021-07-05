@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-Project Limbo
+  - 게임개발[ProjectLimbo]
 ---
 
 ## 대화 시스템 구상하기
