@@ -14,7 +14,7 @@ tags:
   - Maya
 
 categories:
-  - Game Development-Project Limbo
+  - 게임개발[ProjectLimbo]
 ---
 
 ## 유니티의 타임라인(Timeline) 기능
