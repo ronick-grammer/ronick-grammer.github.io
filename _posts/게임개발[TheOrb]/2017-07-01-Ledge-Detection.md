@@ -15,7 +15,7 @@ tags:
   - Unity
   - Maya
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## Ledge Detection
 
