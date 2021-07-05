@@ -14,7 +14,7 @@ tags:
   - Maya
   
 categories:
-  - Game Development-The Orb
+  - 게임개발[TheOrb]
 ---
 ## 감전사 애니메이션 in Maya
 
