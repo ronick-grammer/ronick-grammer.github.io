@@ -83,6 +83,9 @@ let jsonString = """
 ### 예시) 파이어베이스 연동시
 
 ```swift
+import FireBase
+import FirebaseFirestoreSwift
+
 guard let uid = Auth.auth().currentUser?.uid else { return } // 현재 로그인 유저의 id를 가져오기
 
 COLLECTION_USERS.document(uid).getDocument { snapshot, _ in // 현재 유저 id를 가지는 필드들 가져오기
