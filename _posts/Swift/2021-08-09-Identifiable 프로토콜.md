@@ -13,20 +13,73 @@ categories:
   - Database 
 last_modified_at: 2021-01-04 -->
 ---
-# 메모리 관리
-- 집마다 고유의 주소가 있듯이 메모리 역시 주소를 통해 접근하는 저장 장치이다. 이때의 주소(address)란 서로 다른 위치를 구분하기 위해 사용하는 일련의 숫자로 구성된다.
-- 컴퓨터에서는 byte 단위로 메모리 주소를 부여하기 때문에 32비트 주소 체계를 사용하면 2^32 바이트만큼의 메모리 공간에 서로 다른 주소를 할당할 수 있다.
-- 보통 4KB(2^12 byte)단위로 묶어서 페이지(page)라는 하나의 행적구역을 만든다. 페이지 하나의 크기가 2^12바이트이므로 페이지 내에서 바이트별 위치 구분을 위해서는 12비트가 필요하다. 따라서 총 
-  32비트의 주소 중 하위 12비트는 페이지 내에서의 주소를 나타내게 된다.
-  
-## 1. 주소 바인딩
-- 논리적 주소(logical address) : 프로그램이 실행을 위해 메모리에 적재되면 그 프로세스를 위해 생성되는 독자적인 주소(공간)이다. CPU는 프로세스마다 독립적으로 갖는 논리적 주소에 근거해 명령을 실행한다. 
-  논리적 주소는 각 프로세스마다 독립적으로 할당되며 0번지부터 시작된다.
-  
-- 물리적 주소(physical address) : 물리적 메모리에 실제로 올라가는 위치를 말한다. 보통 물리적 메모리의 낮은 주소 영역에는 운영체제가 올라가고, 높은 주소 영역에는 사용자 프로세스들이 올라간다.
+# Identifable 프로토콜
+- 인스턴스의 유일성을 보장하기 위해 ID 값을 설정할 것을 강제하는 프로토콜
 
-- 주소 바인딩(address biding) : 프로세스의 논리적 주소를 물리적 메모리 주소로 연결시켜주는 작업이다. 
+- Identifiable 프로콜의 정의는 아래와 같은데 보이는 것 처럼 id 값을 반드시 가지도록 하고 있다.
 
-- 주소 바인딩 방식은 프로그램이 적재되는 물리적 메모리의 주소가 결정되는 시기에 따라 세 가지로 분류할 수 있다.
+```swift
+public protocol Identifiable {
 
-<center><img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/OS/fd/paged segmentation.JPG"></center>
+    /// A type representing the stable identity of the entity associated with
+    /// an instance.
+    associatedtype ID : Hashable
+
+    /// The stable identity of the entity associated with this instance.
+    var id: Self.ID { get }
+}
+```
+
+<br>
+<br>
+
+### 예시) 직접 키 할당
+```swift
+struct User: Identifiable {
+    
+    var id: Int // Identifiable 프로토콜을 따르기에 반드시 id 라는 프로퍼티를 가지고 있어야 한다.
+    var userName: String
+}
+
+let user = User(id: 1, userName: "ronick")
+```
+
+<br>
+<br>
+
+### 예시) 유일키 생성
+
+```swift
+struct User: Identifiable {
+    
+    let id = UUID() // Identifiable 프로토콜을 따르기에 반드시 id 라는 프로퍼티를 가지고 있어야 한다.
+    var userName: String
+}
+
+let user = User(userName: "ronick")
+print(user.id) //   "2358318B-BFDD-449B-A86A-2B381E10F722" 식으로 출력
+```
+
+<br>
+<br>
+
+### 예시) 파이어베이스 연동하여 사용시
+
+```swift
+import FireBase
+import FirebaseFirestoreSwift
+
+struct User: Identifiable, Decodable {
+    
+    @DocumentID var id: String? // 파이어베이스의 documentId, 즉, uid를 매핑받을 프로퍼티
+    var userName: String
+}
+
+guard let uid = Auth.auth().currentUser?.uid else { return } // 현재 로그인 유저의 id를 가져오기
+
+COLLECTION_USERS.document(uid).getDocument { snapshot, _ in // 현재 유저 id를 가지는 필드들 가져오기
+  // 필드의 json 데이터를 User 클래스로 매핑하기
+  guard let user = try? snapshot?.data(as: User.self) else { return }
+  print("DEBUG: User is \(user.id)") // "fv6lrDlhYAaB6wwAnfL55uRhbzl2" 식으로 출력
+}
+```
