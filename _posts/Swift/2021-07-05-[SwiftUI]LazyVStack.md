@@ -22,7 +22,7 @@ last_modified_at: 2021-01-04 -->
 - LazyVStack은 ScrollView 안에서 사용이 된다.
 
 <center><img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Swift/LazyVStack.PNG" width = 70%></center>
-
+<center><img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/OS/fd/paged segmentation.JPG"></center>
 <br>
 <br>
 
