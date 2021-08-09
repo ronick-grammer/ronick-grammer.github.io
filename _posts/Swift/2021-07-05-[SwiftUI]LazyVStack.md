@@ -23,12 +23,6 @@ last_modified_at: 2021-01-04 -->
 
 <p align="center"> <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Swift/LazyVStack.PNG" width="70%"></p>
 
-<p align="center">
-<img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/5-Erik_modeling/Erik_modeling.jpg" width="70%">
-</p>
-
-<br>
-<br>
 
 ### 예시)
 
