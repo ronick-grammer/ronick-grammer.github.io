@@ -1,6 +1,6 @@
 ---
-title:  "[Swift] Timestamp 경과 시간 변환"
-excerpt: "[Swift] Timestamp 경과 시간 변환"
+title:  "[Swift, Firebase] Timestamp 경과 시간 변환"
+excerpt: "[Swift, Firebase] Timestamp 경과 시간 변환"
 toc: true
 toc_sticky: true
 
@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
 categories:
-  - Swift
+  - Swift, Firebase
 <!-- tags:
   - Database 
 last_modified_at: 2021-01-04 -->
