@@ -9,9 +9,6 @@ header:
 
 categories:
   - SwiftUI
-<!-- tags:
-  - Database 
-last_modified_at: 2021-01-04 -->
 ---
 # LazyVStack
 - 스마트폰의 화면은 작다. 모든 컨텐츠(사진 글 등)를 전부 보여주기에는 제한적이다. 때문에 화면 밖에 있는 컨텐츠들을 보여주기 위해서 우리는 손가락으로 스크롤을 내려가며 컨텐츠들을 읽어 나간다.
