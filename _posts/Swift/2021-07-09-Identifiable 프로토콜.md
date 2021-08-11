@@ -9,9 +9,6 @@ header:
 
 categories:
   - Swift
-<!-- tags:
-  - Database 
-last_modified_at: 2021-01-04 -->
 ---
 # Identifable 프로토콜
 - 인스턴스의 유일성을 보장하기 위해 ID 값을 설정할 것을 강제하는 프로토콜
