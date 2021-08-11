@@ -9,9 +9,6 @@ header:
 
 categories:
   - SwiftUI
-<!-- tags:
-  - Database 
-last_modified_at: 2021-01-04 -->
 ---
 # LazyVGrid
 
