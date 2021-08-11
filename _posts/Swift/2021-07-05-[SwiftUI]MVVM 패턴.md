@@ -19,11 +19,11 @@ last_modified_at: 2021-01-04 -->
 디자인 패턴 몇가지만 알면 개발이 참 쉬워지는 것 같다. 어떻게 코드를 분리해야 할지 알기 때문에 설계 시간도 줄일수 있고 코드보기도 좋고 여러모로 편리하다. iOS에 입문한지 얼마 되지 않은 상태에서 많은 회사 공고를 
 둘러보았는데 유독 눈에 띄는 자격요건이 보인다. "MVVM 디자인 패턴 사용 경험자"
 
+  
+## MVVM 패턴 구성요소
 
 <p align="center"> <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Swift/MVVM 패턴.png" width="70%"></p>
 
-  
-## MVVM 패턴 구성요소
 MVVM 패턴은 Model, View, ViewModel 로 이루어져있는 디자인 패턴이다. 각 요소가 하는 역할은 대략적으로 다음과 같다.
 
   
