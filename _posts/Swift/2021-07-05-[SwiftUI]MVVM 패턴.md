@@ -26,7 +26,6 @@ last_modified_at: 2021-01-04 -->
 ## MVVM 패턴 구성요소
 MVVM 패턴은 Model, View, ViewModel 로 이루어져있는 디자인 패턴이다. 각 요소가 하는 역할은 대략적으로 다음과 같다.
 
-  <br>
   
   ### Model
   데이터의 모델이다. 즉 데이터를 담아두기 위한 구조체라고 할 수 있다. 모델의 데이터(프로퍼티)가 변경되면 ViewModel에게 알리게 된다.
@@ -41,8 +40,6 @@ MVVM 패턴은 Model, View, ViewModel 로 이루어져있는 디자인 패턴이
     var isFollowed: Bool? = false
   }
   ```
-  
-  <br><br>
   
   ### View
   화면에 보이는 UI를 나타낸다. View는 해당 View의 로직을 처리하는 ViewModel을 소유한다. Model 역시 소유할 수 있으나 UI에 나타내는 용도로만 사용하고 데이터는 변경하지 않는다.
@@ -72,8 +69,6 @@ MVVM 패턴은 Model, View, ViewModel 로 이루어져있는 디자인 패턴이
   }
   ```
   
-  <br><br>
-
   ### ViewModel 
   백엔드 혹은 비즈니스 로직을 처리한다. ViewModel은 Model을 소유하며 그 데이터를 갱신한다. Model로 부터 데이터 변경이 생기면 바인딩 되어 있는 View와 상호 액션을 취하게 된다.
   
