@@ -43,7 +43,7 @@ struct FeedView: View {
     }
 }
 ```
-- 결과
+<br>
 <p> <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Swift/LazyVGrid.png" width="20%"></p>
   
 
