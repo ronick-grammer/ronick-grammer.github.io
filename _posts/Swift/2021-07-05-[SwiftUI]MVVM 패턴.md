@@ -65,6 +65,7 @@ last_modified_at: 2021-01-04 -->
   ```
 
   - ViewModel: 백엔드 혹은 비즈니스 로직을 처리한다. ViewModel은 Model을 소유하며 그 데이터를 갱신한다. Model로 부터 데이터 변경이 생기면 바인딩 되어 있는 View와 상호 액션을 취하게 된다.
+  
   ```swift
   class ProfileViewModel: ObservableObject {
     @Published var user: User
