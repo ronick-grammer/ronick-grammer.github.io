@@ -9,9 +9,6 @@ header:
 
 categories:
   - SwiftUI
-<!-- tags:
-  - Database 
-last_modified_at: 2021-01-04 -->
 ---
 # ObservableObjects 프로토콜
 앞선 포스팅에서 [MVVM 패턴](https://ronick-grammer.github.io/swiftui/SwiftUI-MVVM-%ED%8C%A8%ED%84%B4/)에 대해 다루었다. MVVM 패턴에서 View 와 ModelView가 상호 액션을 취할때
