@@ -9,9 +9,6 @@ header:
 
 categories:
   - Swift
-<!-- tags:
-  - Database 
-last_modified_at: 2021-01-04 -->
 ---
 # Decodable 프로토콜
 - 우선 공식 문서의 정의를 보면 "A type that can decode itself from an external representation." 라고 나와 있다.
