@@ -22,7 +22,7 @@ last_modified_at: 2021-01-04 -->
   - ScollView : 스크롤이 가능하게 하는 컨테이너 뷰이다. LazyVStack은 스크롤 기능을 가지고 있지 않으므로 컬럼의 갯수가 커짐으로 인해 스크린을 벗어나는 요소들을 볼 수가 없다.
   - ForEach: 그리드뷰의 각 요소를 하나하나 넣기에는 무리가 있으므로 반복문으로 나타내준다.
 
-- 사용 예)
+<br>
 
 ```swift
 import SwiftUI
@@ -44,7 +44,7 @@ struct FeedView: View {
 }
 ```
 - 결과
-<p align="center"> <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Swift/LazyVGrid.png" width="20%"></p>
+<p> <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Swift/LazyVGrid.png" width="20%"></p>
   
 
 
