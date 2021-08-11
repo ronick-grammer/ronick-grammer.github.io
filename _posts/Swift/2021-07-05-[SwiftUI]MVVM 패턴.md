@@ -95,4 +95,4 @@ class ProfileViewModel: ObservableObject {
   
 <br>
   
-위의 설계대로 "Data and user action binding" 처럼 ViewModel과 View는 서로 바인딩되고, View가 ViewModel에 정의된 action 함수(위 코드에서는 follow 함수) 를 호출 하게 되면 VideModel이 소유한 Model의 데이터(isFollowed)가 변경되고 이와 바인딩된 View는 새로 뷰를 게시하게 된다.
+ViewModel과 View는 서로 바인딩되고, View가 ViewModel에 정의된 action 함수(위 코드에서는 follow 함수) 를 호출 하게 되면 VideModel이 소유한 Model의 데이터(isFollowed)가 변경되고 이와 바인딩된 View는 새로 뷰를 게시하게 된다.
