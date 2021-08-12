@@ -10,6 +10,8 @@ header:
 categories:
   - SwiftUI
 ---
+
+
 # EnvironmentObject? Singleton??
 데이터를 바인딩하여 이를 주도하는 방식으로 [State](https://ronick-grammer.github.io/swiftui/SwiftUI-상태-프로퍼티와-상태-바인딩/), [ObservableObject](https://ronick-grammer.github.io/swiftui/SwiftUI-Observable/) 를 앞서 포스팅하였다.
 그리고 다른 하나로는 EnvironmentObject 가 있다.
