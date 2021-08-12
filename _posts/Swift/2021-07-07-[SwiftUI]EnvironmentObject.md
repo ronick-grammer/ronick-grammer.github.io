@@ -16,7 +16,7 @@ categories:
 데이터를 주도하는 방식으로 [State](https://ronick-grammer.github.io/swiftui/SwiftUI-상태-프로퍼티와-상태-바인딩/), [ObservableObject](https://ronick-grammer.github.io/swiftui/SwiftUI-Observable/) 를 앞서 포스팅하였다.
 그리고 다른 하나로는 EnvironmentObject 가 있다.
 EnvironmentObject를 사용하면서 "이거 싱글톤 아니야?" 라는 생각이 먼저 들었다. 싱글톤은 "하나만 생성하여 주입하고 사용하자"라는 개념에서 시작한 디자인 패턴중 하나이다. Spring 프레임워크를 공부하면서 지독하게
-봐왔던 녀석이기에 EnvironmentObject의 사용패턴이 이와 비슷함을 어렵지 않게 알 수 있었다. 그리고 바로 이점이 상태바인딩과 ObservableObject의 바인딩 방식과는 다르다는 걸 설명할 수 있는 요소가 된다.
+봐왔던 녀석이기에 EnvironmentObject의 사용패턴이 이와 비슷함을 어렵지 않게 알 수 있었다. 그리고 바로 이점이 @State와 ObservableObject의 방식과는 다르다는 걸 설명할 수 있는 요소가 된다.
  
 ## @State, @ObservableObject, @EnvironmentObject 
 SwiftUI에서의 대표적인 위 세가지 프로퍼티 래퍼들은 쓰임새의 목적도 그리고 쓰임새의 방법도 다르다.
