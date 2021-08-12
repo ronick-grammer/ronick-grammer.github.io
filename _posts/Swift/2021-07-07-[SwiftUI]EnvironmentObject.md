@@ -1,14 +1,14 @@
 ---
-title:  "[SwiftUI] Environment Object"
-excerpt: "[SwiftUI] Environment Object"
+title:  "[SwiftUI] EnvironmentObject"
+excerpt: "[SwiftUI] EnvironmentObject"
 toc: true
 toc_sticky: true
- 
+
 header:
-  teaser: /assets/images/bio-photo-keyboard-teaser.jpg
- 
+  teaser: /assets/images/bio-photo-keyboard-teaser.jpg
+
 categories:
-  - SwiftUI
+  - SwiftUI
 ---
 
 
