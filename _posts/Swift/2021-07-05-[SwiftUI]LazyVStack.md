@@ -21,7 +21,7 @@ categories:
 <p align="center"> <img src = "https://raw.githubusercontent.com/ronick-grammer/ronick-grammer.github.io/main/assets/images/Swift/LazyVStack.PNG" width="70%"></p>
 
 
-### 예시)
+## 예시)
 
 ```swift
 ScrollView {
