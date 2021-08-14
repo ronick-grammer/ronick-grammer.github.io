@@ -30,7 +30,7 @@ public protocol Identifiable {
 <br>
 <br>
 
-### 예시) 직접 키 할당
+## 예시) 직접 키 할당
 ```swift
 struct User: Identifiable {
     
@@ -44,7 +44,7 @@ let user = User(id: 1, userName: "ronick")
 <br>
 <br>
 
-### 예시) 유일키 생성
+## 예시) 유일키 생성
 
 ```swift
 struct User: Identifiable {
@@ -60,7 +60,7 @@ print(user.id) //   "2358318B-BFDD-449B-A86A-2B381E10F722" 식으로 출력
 <br>
 <br>
 
-### 예시) 파이어베이스 연동하여 사용시
+## 예시) 파이어베이스 연동하여 사용시
 
 ```swift
 import FireBase
