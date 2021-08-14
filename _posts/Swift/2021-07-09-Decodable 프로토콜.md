@@ -20,7 +20,7 @@ categories:
 <br>
 <br>
 
-### 예시) 
+## 예시) 
 
 ```swift
 import UIKit
@@ -77,7 +77,7 @@ let jsonString = """
 <br>
 <br>
 
-### 예시) 파이어베이스 연동시
+## 예시) 파이어베이스 연동시
 
 ```swift
 import FireBase
