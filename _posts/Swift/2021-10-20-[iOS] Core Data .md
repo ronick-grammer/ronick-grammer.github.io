@@ -1,6 +1,6 @@
 ---
-title:  "[iOS, Firebase] Core Data란"
-excerpt: "[iOS, Firebase] Core Data란"
+title:  "[iOS, CoreData] Core Data란"
+excerpt: "[iOS, CoreData] Core Data란"
 toc: true
 toc_sticky: true
 
