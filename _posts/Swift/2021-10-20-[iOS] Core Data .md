@@ -56,14 +56,14 @@ Store Coordinator와 연결되어 있다. 이렇게 됨으로써 Context가 데�
 마지막으로 이놈은 위의 코어 데이터 스택 생성과 관리를 해주는 컨테이너라고 보면 된다. 위의 코어데이터 구조 사진을 코드로 보면 아래와 같다
 
 <p>
-  <img src= "https://user-images.githubusercontent.com/73280175/139064044-bc7ae091-66c2-4f55-acec-6e11990f0e8f.png" width="70%"> 
+  <img src= "https://user-images.githubusercontent.com/73280175/139064044-bc7ae091-66c2-4f55-acec-6e11990f0e8f.png" width="100%"> 
 </p>
 
 main bundle에서 "DataModel"의 이름을 가지는 Model을 기반으로 Persistent Container를 생성해주고 있다. 이 Persistent Container를 들여다 보면
 
 
 <p>
-  <img src= "https://user-images.githubusercontent.com/73280175/139064064-84e244b3-5ac6-4933-b0e8-0375c7a3d782.png" width="70%"> 
+  <img src= "https://user-images.githubusercontent.com/73280175/139064064-84e244b3-5ac6-4933-b0e8-0375c7a3d782.png" width="100%"> 
 </p>
 
 바로 위처럼 코어 데이터 스택 구조를 이루는 Model(managedObjectModel), Context(viewContext) 그리고  Store Coordinator(persistentStoreCoordinator)를 가지고 있는 것을 볼 수 있다.
