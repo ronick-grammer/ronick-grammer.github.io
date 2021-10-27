@@ -15,7 +15,7 @@ categories:
 # Core Data란?
 
 <p align="center">
-  <img src= "https://user-images.githubusercontent.com/73280175/139062834-3780e220-23ac-4543-8689-9837f17b0cf7.png" width="40%"> 
+  <img src= "https://user-images.githubusercontent.com/73280175/139065483-2ddf811e-c109-4f9a-85b2-becdddfca38a.png" width="40%"> 
 </p>
 
 앱의 디바이스 내부에 데이터를 저장하기 위한 애플의 iOS 프레임워크이다. '데이터 저장' 이라고 하니 데이터베이스가 아닌가 하고 햇갈릴 수도 있다(나도 그랬다..). 코어 데이터가 마치 데이터베이스 처럼 작동하는 듯 보이면서
@@ -34,7 +34,7 @@ Undo와 Redo 기능을 구현하는데 사용할 수가 있다.
 코어데이터를 사용하기 전에 그 구조를 먼저 훑어 보는 것이 좋다. 정말 훑어 보기만 하자. 한번에 이해가 되지 않을 것이기에 사용을 해본 다음 다시 보면 이해하는데 도움이 될것이다.
 
 <p align="center">
-  <img src= "https://user-images.githubusercontent.com/73280175/139062838-5e9fd080-1190-4ee6-b62c-20a9b0ef99f3.png" width="80%"> 
+   <img src= "https://user-images.githubusercontent.com/73280175/139065310-a77d63e0-aa6a-43e7-95f3-7f7180ea3256.png" width="80%"> 
 </p>
 
 ### Model: NSManagedObjectModel
