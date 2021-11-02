@@ -16,7 +16,7 @@ categories:
 
 ## ObservableObject 프로토콜이란
 ObservableObject를 해석하여 힌트를 얻어보자. "관찰가능한 오브젝트". 말그대로 관찰이 가능한 오브젝트라는 뜻이며 이 프로토콜을 따르는 클래스나 구조체는 외부에서 관찰될 수 있는 형태를 갖추게 된다.
-ObservableObject 프로토콜을 따르고 내부에 @Property 래퍼 프로퍼티를 선언한다. 이로써 ExampleViewModel은 '게시자'가 되었다. 즉 MVVM의 ViewModel은 게시자이다. 
+ObservableObject 프로토콜을 따르고 내부에 @Published 래퍼 프로퍼티를 선언한다. 이로써 ExampleViewModel은 '게시자'가 되었다. 즉 MVVM의 ViewModel은 게시자이다. 
 
 ```swift
 import SwiftUI
