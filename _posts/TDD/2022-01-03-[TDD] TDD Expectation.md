@@ -210,7 +210,7 @@ let exp = expectation(description: "callBack happend")
 exp.isInverted = true
 ```
 
-isInverte 프로퍼티는 expectation이 fullfill 되면 '실패', wait의 timeout이 초과되면 '성공' 하게 되는 조건으로 설정한다. 그렇게 되면 waiter는 expectation이 실패할 때까지 혹은 timeout이
+isInverted 프로퍼티는 expectation이 fullfill 되면 '실패', wait의 timeout이 초과되면 '성공' 하게 되는 조건으로 설정한다. 그렇게 되면 waiter는 expectation이 실패할 때까지 혹은 timeout이
 초과될 때까지 기다리는 반대 조건으로 설정되는 것이다.
 
 ### Notification에서 expectaion이 fulfill되는 조건 설정하기
