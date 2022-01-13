@@ -29,9 +29,9 @@ Test Doubles은 실제 객체 대신 대역인 객체를 만들어 테스트를 
 
 
 ### CMPedometer
-유저의 행동 데이터를 얻는 방법은 여러가지가 있지만 그중에서도 CMPedometer API가 가장 사용하기가 쉽다.
+유저의 활동 데이터를 얻는 방법은 여러가지가 있지만 그중에서도 CMPedometer API가 가장 사용하기가 쉽다.
 <br><br>
-여기서 말하는 유저의 행동 데이터란 걷기 횟수나 이동 거리등을 의미한다.
+여기서 말하는 유저의 활동 데이터란 걷기 횟수나 이동 거리 등을 의미한다.
 
 - CMPedometer API를 사용하려면 CMPedometer 객체가 필요
 ```swift
@@ -43,9 +43,9 @@ let cmPedometer = CMPedometer
 ```
 
 하지만 이 CMPedometer를 테스트하기에는 무리가 있다.
-<br>
+<br><br>
 CMPedometer의 이벤트로 인한 출력 값은 디바이스에 너무 의존적이라서 테스트를 하기에는 테스트 값이 일관성있지가 않다.
-<br>
+<br><br>
 이러한 예측 불확실성으로 인해 CMPedometer가 아닌 이에 대한 Mock 객체를 테스트하는 것이 적합하다.
 
 ### Mocking
@@ -58,13 +58,15 @@ CMPedometer의 Mock 객체를 만드려면 Pedometer의 정의부와 구현부�
 
 - Bridge: 밀접하게 관련된 클래스 집합을 구현 계층과 추상 계층으로 분할할 수 있는 디자인 패턴
 
-<br>
 
 ### Bridge 과 Fadade 패턴을 사용하여 Pedometer Mock 객체 만들기
+<br>
 
 ```swift
 protocol Pedometer {
   func start()
+  
+  var pedometerAvailable: Bool { get }
 }
 ```
 
@@ -72,6 +74,12 @@ protocol Pedometer {
 
 ```swift
 extension CMPedometer: Pedometer {
+  var pedometerAvailable: Bool {
+    return CMPedometer.isStepCountingAvailable() &&
+           CMPedometer.isDistanceAvailable() &&
+           CMPedometer.authorizationStatus() != .restricted
+  }
+
   func start() {
     startEventUpdates { CMPedometerEvent?, Error? in
     // 복잡한 코드 작성
@@ -115,6 +123,8 @@ import CoreMotion
 class MockPedometer: Pedometer {
   private(set) var started: Bool = false
   
+  var pedometerAvailable: Bool = true
+  
   func start() {
     started = true
   }
@@ -136,7 +146,7 @@ override func setUp() {
 
 override func tearDown() {
   mockPedometer = nil
-  sut = il
+  sut = nil
   super.tearDown()
 }
 
@@ -151,6 +161,13 @@ func testAppModel_whenStarted_startsPedometer() {
   XCTAssertTrue(mockPedometer.started)
 }
 ```
+
+### 정리: Mock 객체 테스트 패턴
+다른 외부적인 요소인 네트워크 API의 결과값에 의존적이거나 위처럼 디바이스에 의존적인 상황에서 Mock 객체를 테스트하는 패턴은 아래처럼 일정하게 할 수 있다.
+
+1. 테스트하고자 하는 대상 클래스와 관련된 프로토콜을 만들어서 그 내부에 사용될 프로퍼티와 메서드를 정의한다.
+2. 위에서 만든 프로토콜을 대상 클래스가 채택하여 앱이 작동했을 때 실제로 사용하게 될 내용들을 구현한다.
+3. Mock: 위에서 만든 프로토콜을 채택하여 테스트 내용을 구현하여 테스트 한다.
 
 
 
