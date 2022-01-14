@@ -166,11 +166,113 @@ func testAppModel_whenStarted_startsPedometer() {
 다른 외부적인 요소인 네트워크 API의 결과값에 의존적이거나 위처럼 디바이스에 의존적인 상황에서 Mock 객체를 테스트하는 패턴은 아래처럼 일정하게 할 수 있다.
 
 1. 테스트하고자 하는 대상 클래스와 관련된 프로토콜을 만들어서 그 내부에 사용될 프로퍼티와 메서드를 정의한다.
+
+<br>
+
 2. 위에서 만든 프로토콜을 대상 클래스가 채택하여 앱이 작동했을 때 실제로 사용하게 될 내용들을 구현한다.
+
+<br>
+
 3. Mock: 위에서 만든 프로토콜을 채택하여 테스트 내용을 구현하여 테스트 한다.
 
 
+### 디바이스가 아닌 시뮬레이터일 경우
+시뮬레이터는 유저의 활동 데이터를 수집할 수 있는 기능이 없기 때문에(GPS 없음, 자이로스코프 없음),  
+<br><br>
+시뮬레이터에서 앱이 실행될 때 이에 대해 동작하도록 가상의 객체를 따로 만들어서 쓸 수 있다.
 
+```swift 
+class SimulatorPedometer: Pedometer {
+  .
+  .
+  .
+  
+  var distance = 0.0
+  .
+  .
+  .
+  func start()
+    ...
+  }
+  
+  func stop() {
+    ...
+  } 
+}
+
+.
+.
+.
+static var pedometerFactory: (() -> Pedometer) = {
+  #if targetEnvironment(simulator)
+  return SimulatorPedometer() // 시뮬레이터 사용하는 객체 반환
+  else 
+  return CMPedometer() // 실제 디바이스에서 사용하는 Pedometer 객체 반환
+}
+```
+
+
+### Partial Mock
+테스트하고자 하는 클래스가 있는데 특정 메서드가 불렸을 때,
+<br><br>
+원래 메서드의 내용이 아닌 다른 내용을 테스트 하고 싶다면 Partial Mock을 사용할 수 있다.
+<br><br>
+
+아래처럼 테스트하고자 하는 클래스가 있고, updaState 메서드의 내용을 다르게 해서 테스트 하고 싶다면
+
+```swift 
+IBDesignable
+class ChaseView: UIView {
+  let nessieView = UIImageView()
+  let runnerView = UIImageView()
+
+  private var runnerComplete: CGFloat = 0
+  private var nessieComplete: CGFloat = 0
+
+  var state: AppState = .notStarted {
+    didSet {
+      nessieView.image = state.nessieImage
+      runnerView.image = state.runnerImage
+    }
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    ...
+  }
+
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    ...
+  }
+
+  func updateState(runner: Double, nessie: Double) {
+    runnerComplete = CGFloat(runner)
+    nessieComplete = CGFloat(nessie)
+    setNeedsLayout()
+  }
+}
+```
+
+<br>
+위 클래스의 Partial mcok 클래스를 만들면 다음과 같다.
+
+```swift
+@testable import FitNess
+
+class ChaseViewPartialMock: ChaseView {
+  var updateStateCalled = false
+  var lastRunner: Double?
+  var lastNessie: Double?
+  
+  override func updateState(runner: Double, nessie: Double) {
+    updateStateCalled = true
+    lastRunner = runner
+    lastNessie = nessie
+    super.updateState(runner: runner, nessie: nessie)
+  }
+}
+```
 
 
 
