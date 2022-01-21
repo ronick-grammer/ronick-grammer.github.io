@@ -26,6 +26,20 @@ Model, View, Controller의 MVC 아키텍처 패턴에서 Networking 요소를 �
 - 플랫폼 기기나 네트워크 같은 외부 요소에 의존성이 있는 코드를 작성할 때는 관련 클래스를 Mocking 하여 Mock 클래스를 만든다.
 - 이때 Mocking을 할때는 관련 클래스를 상속받아 테스트에 필요한 메서드를 override 해준다.
 
+예를 들어, 네트워크 데이터를 받아오기 위해 URLSession 클래스를 이용한다고 하면,
 
+```swift
+URLSession
+```
 
+실제 네트워크 콜을 해서 테스트를 할 순 없으니 가짜 콜을 만들기 위해 URLSession 클래스를 상속받아 특정 메서드를 override 하는 것이다.
+```swift
+class MockURLSession: URLSession {
+  override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+    return MockURLSessionDataTask(completionHandler: completionHandler, url: url)
+  }
+}
+```
+
+이렇게 MockURLSession 클래스를 이용해서 dataTask 메서드를 호출하면 네트워크 실제 네트워크 통신을 하는 것이 아니라 가짜 네트워크 통신을 하게 된다.
 
