@@ -1,0 +1,31 @@
+---
+title:  "[TDD] 네트워킹"
+excerpt: "[TDD] 네트워킹"
+toc: true
+toc_sticky: true
+
+header:
+  teaser: /assets/images/bio-photo-keyboard-teaser.jpg
+
+categories:
+  - TDD
+  - IOS
+  - Swift
+---
+
+## 네트워킹 
+
+### MVN-N 아키텍처 패턴
+Model, View, Controller의 MVC 아키텍처 패턴에서 Networking 요소를 추가한 아키텍처 패턴을 MVN-N 아키텍처 패턴이라고 한다.
+
+- networking clinet 라는 곳에 네트워크 관련 로직을 모두 담아놓음으로 인해서 관리하기 쉬워진다.
+- 반복적으로 사용되는 네트워크 코드를 줄여준다.
+
+### 네트워크 코드를 테스트하려면 어떻게 해야할까?
+
+- 플랫폼 기기나 네트워크 같은 외부 요소에 의존성이 있는 코드를 작성할 때는 관련 클래스를 Mocking 하여 Mock 클래스를 만든다.
+- 이때 Mocking을 할때는 관련 클래스를 상속받아 테스트에 필요한 메서드를 override 해준다.
+
+
+
+
