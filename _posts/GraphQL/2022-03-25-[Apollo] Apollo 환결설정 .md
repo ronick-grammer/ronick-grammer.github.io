@@ -30,8 +30,9 @@ Package URL: https://github.com/apollographql/apollo-ios
 
 ### 서버로 부터 Schema 가져오기
 Apollo iOS SDK는 서버가 제공하는 GraphQL Schema의 로컬 복사본이 필요하다. 
+Apollo가 튜토리얼에서 공식적으로 제공하고 있는 서버로 부터 Schema를 가져온다. 이를 위해 Xcode의 "Run Script Build Phase" 를 추가하여 Apollo CLI를 사용한다.
 
-1. Apollo가 튜토리얼에서 공식적으로 제공하고 있는 서버로 부터 Schema를 가져온다. 이를 위해 Xcode의 "Run Script Build Phase" 를 추가하여 Apollo CLI를 사용한다.
+<br>
 <img width="868" alt="build_phases" src="https://user-images.githubusercontent.com/73280175/160075240-99575dbc-1b07-4dcb-936f-c0cc1a7c5a35.png">
 <br>
 <img width="269" alt="new_run_script_phase" src="https://user-images.githubusercontent.com/73280175/160075174-8efda251-5c23-477a-8ee2-c0f5ff5b4f98.png">
@@ -39,7 +40,7 @@ Apollo iOS SDK는 서버가 제공하는 GraphQL Schema의 로컬 복사본이 �
 <img width="702" alt="rename_run_script" src="https://user-images.githubusercontent.com/73280175/160075175-24a8bde1-9b18-49ad-beb6-44bd806aa1b8.png">
 
 그리고 Apollo phase를 클릭 확장하여 아래 스크립트를 붙여 넣는다.
-    
+
 ```sh
 # Don't run this during index builds
 if [ $ACTION = "indexbuild" ]; then exit 0; fi
@@ -76,7 +77,7 @@ schema 파일은 코드를 생성하는 용도에만 사용되므로 모든 targ
 ### operation-qeury 
 schema를 서버로 부터 가져왔으니 이제 query를 생성해서 이에 맞는 swift 코드를 생성하자.
 
-1. 아래와 같이 필요한 데이터만 가져오도록 ```.graphql``` 파일에 쿼리를 생성한다.
+첫째, 아래와 같이 필요한 데이터만 가져오도록 ```.graphql``` 파일에 쿼리를 생성한다.
 
 ```sql
 
@@ -93,7 +94,7 @@ query ExampleQuery {
 
 ```
 
-2. 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다. <br>
+둘째, 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다. <br>
 
 ```sh
 # Don't run this during index builds
@@ -126,7 +127,7 @@ cd "${SRCROOT}/${TARGET_NAME}"
 ```
 
 
-3. 빌드를 하여 루트 디렉토리에 ```API.swift``` 파일이 생성한다.
+셋째, 빌드를 하여 루트 디렉토리에 ```API.swift``` 파일이 생성한다.
 
 
 위의 API.swift 파일을 살펴보면 위에서 생성했던 쿼리의 내용에 맞게 구조체가 구현되어 있는 것을 볼 수 있다. 쿼리문의 내용을 변경하고 빌드를 하면 그 즉시 ```API.swift```의 내용이 이에 맞게 반영한다.
@@ -136,7 +137,7 @@ cd "${SRCROOT}/${TARGET_NAME}"
 ApolloClient 는 위에서 생성한 API.swift내의 operation 코드를 사용하여 서버와 네트워크 통신을 진행한다. <br>
 그리고 ApolloClient는 싱글톤으로 생성되는 것이 권장된다.
 
-1. ```Network.swift``` 만들고 아래의 코드를 붙여넣는다.
+첫째, ```Network.swift``` 만들고 아래의 코드를 붙여넣는다.
 
 ```swift
 import Foundation
@@ -150,7 +151,7 @@ class Network {
 
 ```
 
-2. ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 AppDelegate.swift의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
+둘째, ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 AppDelegate.swift의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
 
 ```swift
 Network.shared.apollo.fetch(query: LaunchListQuery()) { result in
@@ -163,7 +164,7 @@ Network.shared.apollo.fetch(query: LaunchListQuery()) { result in
 }
 ```
 
-3. 애플리케이션을 빌드/실행 시켜 응답값을 콘솔에서 확인한다.
+셋째, 애플리케이션을 빌드/실행 시켜 응답값을 콘솔에서 확인한다.
 
 
 
