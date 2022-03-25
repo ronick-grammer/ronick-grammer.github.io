@@ -26,7 +26,7 @@ Package URL: https://github.com/apollographql/apollo-ios
 ### 코드 생성을위해 필요한 것
 
 - GraphQL Schema(스키마): 서버에 있는 쿼리와 데이터의 타입을 모아둔 리스트들을 담고 있다.
-- operation: 스키마에 기반한 데이터를 요청하는 .
+- operation: 스키마에 기반한 데이터를 요청하는 타입(query, mutation 등이 있다)이다.
 
 ### 서버로 부터 Schema 가져오기
 Apollo iOS SDK는 서버가 제공하는 GraphQL Schema의 로컬 복사본이 필요하다. 
@@ -94,6 +94,7 @@ query ExampleQuery {
 
 ```
 
+<br>
 둘째, 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다. <br>
 
 ```sh
@@ -126,7 +127,7 @@ cd "${SRCROOT}/${TARGET_NAME}"
 
 ```
 
-
+<br>
 셋째, 빌드를 하여 루트 디렉토리에 ```API.swift``` 파일이 생성한다.
 
 
@@ -150,7 +151,7 @@ class Network {
 }
 
 ```
-
+<br>
 둘째, ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 AppDelegate.swift의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
 
 ```swift
@@ -164,6 +165,7 @@ Network.shared.apollo.fetch(query: LaunchListQuery()) { result in
 }
 ```
 
+<br>
 셋째, 애플리케이션을 빌드/실행 시켜 응답값을 콘솔에서 확인한다.
 
 
