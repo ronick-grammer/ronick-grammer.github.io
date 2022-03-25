@@ -39,8 +39,6 @@ Apollo iOS SDK는 서버가 제공하는 GraphQL Schema의 로컬 복사본이 �
 <img width="702" alt="rename_run_script" src="https://user-images.githubusercontent.com/73280175/160075175-24a8bde1-9b18-49ad-beb6-44bd806aa1b8.png">
 
 그리고 Apollo phase를 클릭 확장하여 아래 스크립트를 붙여 넣는다.
-
-<details><summary>스크립트</summary>
     
 ```sh
 # Don't run this during index builds
@@ -70,8 +68,6 @@ cd "${SRCROOT}/${TARGET_NAME}"
 # "${SCRIPT_PATH}"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile="schema.json" API.swift
 "${SCRIPT_PATH}"/run-bundled-codegen.sh schema:download --endpoint="https://apollo-fullstack-tutorial.herokuapp.com/graphql"
 ```
-    
-</details>
 
 위 스크립트를 붙여넣고 빌드를 누르면 프로젝트 root 디렉토리에 schema.graphqls(혹은 schema.json)이 생성된다. <br>
 디렉토리에는 생성되었지만, .xcodeproj 에는 적용이 안되었으므로 해당 파일을 직접 추가해준다. <br>
@@ -98,8 +94,6 @@ query ExampleQuery {
 ```
 
 2. 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다. <br>
-
-<details><summary>스크립트</summary>
 
 ```sh
 # Don't run this during index builds
@@ -130,8 +124,6 @@ cd "${SRCROOT}/${TARGET_NAME}"
 # "${SCRIPT_PATH}"/run-bundled-codegen.sh schema:download --endpoint="https://apollo-fullstack-tutorial.herokuapp.com/graphql"
 
 ```
-
-</details>
 
 
 3. 빌드를 하여 루트 디렉토리에 ```API.swift``` 파일이 생성한다.
