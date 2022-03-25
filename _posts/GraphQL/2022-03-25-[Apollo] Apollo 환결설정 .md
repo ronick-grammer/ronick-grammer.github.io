@@ -8,9 +8,8 @@ header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
 categories:
-  - Apollo
   - GraphQL
-  - IOS
+  - iOS
   - Swift
 ---
 
