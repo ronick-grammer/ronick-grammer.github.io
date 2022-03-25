@@ -158,8 +158,7 @@ class Network {
 
 ```
 
-2. ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 
-AppDelegate.swift의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
+2. ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 AppDelegate.swift의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
 
 ```swift
 Network.shared.apollo.fetch(query: LaunchListQuery()) { result in
