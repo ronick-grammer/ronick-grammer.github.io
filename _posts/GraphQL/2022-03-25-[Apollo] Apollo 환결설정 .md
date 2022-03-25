@@ -69,7 +69,6 @@ fi
 cd "${SRCROOT}/${TARGET_NAME}"
 # "${SCRIPT_PATH}"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile="schema.json" API.swift
 "${SCRIPT_PATH}"/run-bundled-codegen.sh schema:download --endpoint="https://apollo-fullstack-tutorial.herokuapp.com/graphql"
-
 ```
     
 </details>
@@ -99,7 +98,8 @@ query ExampleQuery {
 ```
 
 2. 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다.
-  <details><summary>스크립트</summary>
+3. 
+<details><summary>스크립트</summary>
 
 ```sh
 # Don't run this during index builds
@@ -131,7 +131,7 @@ cd "${SRCROOT}/${TARGET_NAME}"
 
 ```
 
-  </details>
+</details>
 
 
 3. 빌드를 하여 루트 디렉토리에 ```API.swift``` 파일이 생성한다.
