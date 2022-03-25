@@ -97,8 +97,8 @@ query ExampleQuery {
 
 ```
 
-2. 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다.
-3. 
+2. 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다. <br>
+
 <details><summary>스크립트</summary>
 
 ```sh
