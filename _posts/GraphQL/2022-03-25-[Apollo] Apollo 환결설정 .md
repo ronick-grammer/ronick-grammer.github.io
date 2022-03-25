@@ -97,38 +97,39 @@ query ExampleQuery {
 }
 
 ```
+
 2. 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다.
   <details><summary>스크립트</summary>
 
-  ```sh
-  # Don't run this during index builds
-  if [ $ACTION = "indexbuild" ]; then exit 0; fi
+```sh
+# Don't run this during index builds
+if [ $ACTION = "indexbuild" ]; then exit 0; fi
 
-  # Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.
-  DERIVED_DATA_CANDIDATE="${BUILD_ROOT}"
+# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.
+DERIVED_DATA_CANDIDATE="${BUILD_ROOT}"
 
-  while ! [ -d "${DERIVED_DATA_CANDIDATE}/SourcePackages" ]; do
-    if [ "${DERIVED_DATA_CANDIDATE}" = / ]; then
-      echo >&2 "error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'"
-      exit 1
-    fi
-
-    DERIVED_DATA_CANDIDATE="$(dirname "${DERIVED_DATA_CANDIDATE}")"
-  done
-
-  # Grab a reference to the directory where scripts are checked out
-  SCRIPT_PATH="${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts"
-
-  if [ -z "${SCRIPT_PATH}" ]; then
-      echo >&2 "error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project."
-      exit 1
+while ! [ -d "${DERIVED_DATA_CANDIDATE}/SourcePackages" ]; do
+  if [ "${DERIVED_DATA_CANDIDATE}" = / ]; then
+    echo >&2 "error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'"
+    exit 1
   fi
 
-  cd "${SRCROOT}/${TARGET_NAME}"
-  "${SCRIPT_PATH}"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile="schema.json" API.swift
-  # "${SCRIPT_PATH}"/run-bundled-codegen.sh schema:download --endpoint="https://apollo-fullstack-tutorial.herokuapp.com/graphql"
+  DERIVED_DATA_CANDIDATE="$(dirname "${DERIVED_DATA_CANDIDATE}")"
+done
 
-  ```
+# Grab a reference to the directory where scripts are checked out
+SCRIPT_PATH="${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts"
+
+if [ -z "${SCRIPT_PATH}" ]; then
+    echo >&2 "error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project."
+    exit 1
+fi
+
+cd "${SRCROOT}/${TARGET_NAME}"
+"${SCRIPT_PATH}"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile="schema.json" API.swift
+# "${SCRIPT_PATH}"/run-bundled-codegen.sh schema:download --endpoint="https://apollo-fullstack-tutorial.herokuapp.com/graphql"
+
+```
 
   </details>
 
@@ -144,17 +145,18 @@ ApolloClient 는 위에서 생성한 API.swift내의 operation 코드를 사용�
 그리고 ApolloClient는 싱글톤으로 생성되는 것이 권장된다.
 
 1. ```Network.swift``` 만들고 아래의 코드를 붙여넣는다.
-  ```swift
-  import Foundation
-  import Apollo
 
-  class Network {
-    static let shared = Network()
+```swift
+import Foundation
+import Apollo
 
-    private(set) lazy var apollo = ApolloClient(url: URL(string: "graphQL 스키마를 가지고 있는 서버 url을 넣으세요")!)
-  }
+class Network {
+  static let shared = Network()
 
-  ```
+  private(set) lazy var apollo = ApolloClient(url: URL(string: "graphQL 스키마를 가지고 있는 서버 url을 넣으세요")!)
+}
+
+```
 
 2. ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 
 AppDelegate.swift의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
