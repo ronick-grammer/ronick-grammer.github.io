@@ -1,6 +1,6 @@
 ---
-title:  "[iOS] custom experiences with Group Activities"
-excerpt: "[iOS] custom experiences with Group Activities"
+title:  "[iOS] Custom experiences with Group Activities"
+excerpt: "[iOS] Custom experiences with Group Activities"
 toc: true
 toc_sticky: true
 
@@ -12,7 +12,7 @@ categories:
   - WWDC
 ---
 
-# ****Build custom experiences with Group Activities****
+# Custom experiences with Group Activities
 
 - 그룹 액티비티는 디바이스들을 통해 사용자들간에 미디어 경험을 공유할 수 있도록 해준다.
 
