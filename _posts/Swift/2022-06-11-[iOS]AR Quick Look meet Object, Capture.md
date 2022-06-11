@@ -41,21 +41,22 @@ categories:
 
 <br><br>
 
-- Object Cature를 사용하여 3D 오브젝트를 만드는 과정
-  1. 우선 실제 사물을 모든 각도에서 찍는다.
+- Object Cature를 사용하여 3D 오브젝트를 만드는 과정 <br><br>
+  첫째, 우선 실제 사물을 모든 각도에서 찍는다.
 
   <p>
   <img width="30%" alt="5-1" src="https://user-images.githubusercontent.com/73280175/173174186-a00a0bec-5f9d-47ef-bfd5-cb1823e9ee3a.png">
   <img width="30%" alt="5-2" src="https://user-images.githubusercontent.com/73280175/173174185-4cddd4ae-c0e3-40d3-9cb9-d357c599a14e.png">
   <img width="30%" alt="5-3" src="https://user-images.githubusercontent.com/73280175/173174184-284c1713-9580-4304-b251-8d280ad437a9.png">
-  </p>
+  </p> 
+  <br>
 
-  2. 그 후 Object Cautre를 사용하여 USDZ 모델을 생성한다.
+  둘째, 그 후 Object Cautre를 사용하여 USDZ 모델을 생성한다.
 
   <img width="994" alt="6" src="https://user-images.githubusercontent.com/73280175/173174183-2be578c4-b542-453e-aa3c-c2c88254486a.png">
+  <br><br>
 
-
-  3. 위에서 만든 USDZ 모델에다가 Reality Composer를 사용하여 커스텀 이벤트를 생성할 수도 있다.
+  셋째, 위에서 만든 USDZ 모델에다가 Reality Composer를 사용하여 커스텀 이벤트를 생성할 수도 있다.
 
   <img width="974" alt="7" src="https://user-images.githubusercontent.com/73280175/173174182-a1bbcec9-c729-491b-bd89-7a2657a89db7.png">
 
