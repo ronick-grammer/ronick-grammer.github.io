@@ -12,7 +12,7 @@ categories:
   - WWDC
 ---
 
-# ****AR Quick Look, meet Object Capture****
+## AR Quick Look, meet Object Capture
 
 <img width="1145" alt="1" src="https://user-images.githubusercontent.com/73280175/173174193-ac9bfdb1-fcdd-4907-8061-1bc384ca8ee5.png">
 
