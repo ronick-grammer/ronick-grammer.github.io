@@ -8,9 +8,7 @@ header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
 categories:
-  - Code Review
-  - IOS
-  - Swift
+  - Architecture & Pattern
 ---
 
 ## ISP: 인터페이스 분리 원칙
