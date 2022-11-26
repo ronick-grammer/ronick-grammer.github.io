@@ -15,7 +15,7 @@ categories:
 
 인터페이스 분리 원칙(ISP)는 아래 다이어그램에서 유래하였다.
 
-<img width=80% alt="1" src="https://user-images.githubusercontent.com/73280175/204081630-893193e1-b3b8-4050-8b50-2f58a60961b9.png">
+<img width="80%" alt="1" src="https://user-images.githubusercontent.com/73280175/204081630-893193e1-b3b8-4050-8b50-2f58a60961b9.png">
 
 - 위 세 `User`는 `OPS` 클래스의 오퍼레이션을 사용하고 있다.
 - 각 `User`는 번호에 맞는 각 `op` 메서드만을 사용하고 있다
@@ -26,7 +26,7 @@ categories:
 
 해결책: 위 문제는 오퍼레이션을 인터페이스 단위로 분리하여 해결할 수 있다. 각 `User`에 대한 `OPS`를 만들어 이에 대해서만 의존하게 만든다.
 
-<img width=80% alt="2" src="https://user-images.githubusercontent.com/73280175/204081627-ed50c01f-ec44-4743-8f3c-c1005d5f062a.png">
+<img width="80%" alt="2" src="https://user-images.githubusercontent.com/73280175/204081627-ed50c01f-ec44-4743-8f3c-c1005d5f062a.png">
 
     
 
@@ -39,7 +39,7 @@ categories:
 
 - ISP를 사용하는 이유는 필요이상으로 많은 걸 포함하는 모듈에 의존하는 것을 피해서 불필요한 재컴파일과 재배포를 방지하기 위해서이다.
 
-<img width=80% alt="3" src="https://user-images.githubusercontent.com/73280175/204081620-229855b2-c319-4fa6-a80e-1e8e80012ffb.png">
+<img width="80%" alt="3" src="https://user-images.githubusercontent.com/73280175/204081620-229855b2-c319-4fa6-a80e-1e8e80012ffb.png">
 
 위 그림에서는 `System S`가 `Framework F`에 의존하고 `Framework F`는 `Database D`에 의존한다.
 
