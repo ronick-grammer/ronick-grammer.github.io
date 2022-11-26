@@ -1,6 +1,6 @@
 ---
-title:  "[Clean Architecture] 3부 10장 리뷰"
-excerpt: "[Clean Architecture] 3장 10장 리뷰"
+title:  "[Clean Architecture] 인터페이스 분리 원칙"
+excerpt: "[Clean Architecture] 인터페이스 분리 원칙"
 toc: true
 toc_sticky: true
 
