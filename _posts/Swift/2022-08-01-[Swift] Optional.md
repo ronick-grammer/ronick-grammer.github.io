@@ -49,13 +49,13 @@ categories:
  wrapped ?? value
  ```
  
- ### 강제 Unwrapping
- - 옵셔널 변수가 값을 가지고 있다는 확신하에 강제적으로 옵셔널 변수를 unwrapping 하는 방법이다.
- - 옵셔널 변수가 nil일 경우 강제 언래핑을 진행하면 크래시가 발생한다.
- 
-  ``` swift 
- wrapped!
- ```
+### 강제 Unwrapping
+- 옵셔널 변수가 값을 가지고 있다는 확신하에 강제적으로 옵셔널 변수를 unwrapping 하는 방법이다.
+- 옵셔널 변수가 nil일 경우 강제 언래핑을 진행하면 크래시가 발생한다.
+
+``` swift 
+wrapped!
+```
 
 ### 📝 참고 사이트
 - [Optional](https://developer.apple.com/documentation/swift/optional#Using-the-Nil-Coalescing-Operator)
