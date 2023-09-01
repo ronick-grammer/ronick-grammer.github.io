@@ -42,7 +42,7 @@ print("six times three is \(threeTimesTable[6])")
 ### Array와 Dictionary
 Swift의 데이터 타입인 `Array`와 `Dictionary`도 인덱스를 통해 값을 할당/접근 할때, Subscript를 사용한다는 것을 유추해볼 수 있다.
 
-- **Array**
+- Array
 ```swift
 let nums: [Int] = [1, 2, 3, 4]
  
@@ -50,7 +50,7 @@ nums[0]                // 1
 nums[1]                // 2
 ```
 
-- **Dictionary**
+- Dictionary
 ```swift
 let dict: [String: Int] = ["one": 1, "two": 2]
  
