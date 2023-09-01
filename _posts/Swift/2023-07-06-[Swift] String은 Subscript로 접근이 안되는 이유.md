@@ -23,7 +23,6 @@ let str: String = "123456"
 let index = str.index(str.startIndex, offsetBy: 1)
 str[index] // "2"
 str[1] // error
-
 ```
 
 #### Swift의 문자는 유니코드를 준수하여 표기된다
