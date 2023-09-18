@@ -1,7 +1,7 @@
 ---
-title:  "[iOS] Custom experiences with Group Activities"
-excerpt: "[iOS] Custom experiences with Group Activities"
-toc: true
+title:  "[iOS] Group Activities를 활용한 실시간 자료공유"
+excerpt: "[iOS] Group Activities를 활용한 실시간 자료공유"
+toc: false
 toc_sticky: true
 
 header:
