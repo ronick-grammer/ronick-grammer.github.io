@@ -278,8 +278,8 @@ defaults:
       comments: true
       share: true
       related: true
-      toc_ads: true
-      toc_sticky: true
+      toc_ads: false
+      toc_sticky: false
 
   # _pages
   - scope:
