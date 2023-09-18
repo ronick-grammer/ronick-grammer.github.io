@@ -1,6 +1,6 @@
 ---
-title:  "[iOS] AR Quick Look, meet Object Capture"
-excerpt: "[iOS] AR Quick Look, meet Object Capture"
+title:  "[iOS] AR Quick Look을 활용한 증강현실 구현"
+excerpt: "[iOS] AR Quick Look을 활용한 증강현실 구현"
 toc: true
 toc_sticky: true
 
@@ -126,6 +126,7 @@ categories:
 - Reality Composer를 사용하여 터치시 도슨트의 전시품 설명을 청취할 수 있다.
 
 <img width="1105" alt="14" src="https://user-images.githubusercontent.com/73280175/173174166-74edf5ff-4020-4905-bd32-0a60f3e4cc99.png">
+
 
 \[출처]: [WWDC 강연: AR Quick Look, meet Object Capture](https://developer.apple.com/videos/play/wwdc2021/10078/)
 
