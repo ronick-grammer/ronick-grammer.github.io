@@ -1,6 +1,6 @@
 ---
-title:  "[Apollo] Apollo 환결설정"
-excerpt: "[Apollo] Apollo 환결설정"
+title:  "[Apollo] Apollo 환경설정"
+excerpt: "[Apollo] Apollo 환경설정"
 toc: true
 toc_sticky: true
 
