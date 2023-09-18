@@ -70,14 +70,14 @@ cd "${SRCROOT}/${TARGET_NAME}"
 "${SCRIPT_PATH}"/run-bundled-codegen.sh schema:download --endpoint="https://apollo-fullstack-tutorial.herokuapp.com/graphql"
 ```
 
-위 스크립트를 붙여넣고 빌드를 누르면 프로젝트 root 디렉토리에 schema.graphqls(혹은 schema.json)이 생성된다. <br>
-디렉토리에는 생성되었지만, .xcodeproj 에는 적용이 안되었으므로 해당 파일을 직접 추가해준다. <br>
+위 스크립트를 붙여넣고 빌드를 누르면 프로젝트 root 디렉토리에 ```schema.graphqls```(혹은 ```schema.json```)이 생성된다. <br>
+디렉토리에는 생성되었지만, ```.xcodeproj``` 에는 적용이 안되었으므로 해당 파일을 직접 추가해준다. <br>
 schema 파일은 코드를 생성하는 용도에만 사용되므로 모든 target을 체크해제시켜 불필요한 application bundle 사이즈를 늘리지 않도록 한다.
 
 ### operation-qeury 
 schema를 서버로 부터 가져왔으니 이제 query를 생성해서 이에 맞는 swift 코드를 생성하자.
 
-첫째, 아래와 같이 필요한 데이터만 가져오도록 ```.graphql``` 파일에 쿼리를 생성한다.
+1. 아래와 같이 필요한 데이터만 가져오도록 ```.graphql``` 파일에 쿼리를 생성한다.
 
 ```sql
 
@@ -95,7 +95,8 @@ query ExampleQuery {
 ```
 
 <br>
-둘째, 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다. <br>
+
+2. 그리고 위의 과정에서 붙여넣었던 Apollo build phase에다가 아래 스크립트를 붙여넣는다. <br>
 
 ```sh
 # Don't run this during index builds
@@ -128,17 +129,16 @@ cd "${SRCROOT}/${TARGET_NAME}"
 ```
 
 <br>
-셋째, 빌드를 하여 루트 디렉토리에 ```API.swift``` 파일이 생성한다.
 
-
-위의 API.swift 파일을 살펴보면 위에서 생성했던 쿼리의 내용에 맞게 구조체가 구현되어 있는 것을 볼 수 있다. 쿼리문의 내용을 변경하고 빌드를 하면 그 즉시 ```API.swift```의 내용이 이에 맞게 반영한다.
+3. 빌드를 하여 루트 디렉토리에 ```API.swift``` 파일이 생성한다. 
+위의 ```API.swift``` 파일을 살펴보면 위에서 생성했던 쿼리의 내용에 맞게 구조체가 구현되어 있는 것을 볼 수 있다. 쿼리문의 내용을 변경하고 빌드를 하면 그 즉시 ```API.swift```의 내용이 이에 맞게 반영한다.
 
 ### 쿼리 테스트하기
-위에서 생성한 API.swift안의 operation을 사용하기 위해서는 ```ApolloClient``` 인스턴스를 생성해야한다. <br>
-ApolloClient 는 위에서 생성한 API.swift내의 operation 코드를 사용하여 서버와 네트워크 통신을 진행한다. <br>
+위에서 생성한 ```API.swift```안의 operation을 사용하기 위해서는 ```ApolloClient``` 인스턴스를 생성해야한다. <br>
+ApolloClient 는 위에서 생성한 ```API.swift```내의 operation 코드를 사용하여 서버와 네트워크 통신을 진행한다. <br>
 그리고 ApolloClient는 싱글톤으로 생성되는 것이 권장된다.
 
-첫째, ```Network.swift``` 만들고 아래의 코드를 붙여넣는다.
+1. ```Network.swift``` 만들고 아래의 코드를 붙여넣는다.
 
 ```swift
 import Foundation
@@ -152,7 +152,8 @@ class Network {
 
 ```
 <br>
-둘째, ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 AppDelegate.swift의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
+
+2. ApolloClient 인스턴스가 서버와 정확한 통신을 하고 있다는 것을 테스트하기 위해서 ```AppDelegate.swift```의 ```application:didFinishLaunchingWithOptions``` 메서드 안에 ```return```문 위에 아래 코드를 붙여넣는다.
 
 ```swift
 Network.shared.apollo.fetch(query: LaunchListQuery()) { result in
@@ -166,7 +167,8 @@ Network.shared.apollo.fetch(query: LaunchListQuery()) { result in
 ```
 
 <br>
-셋째, 애플리케이션을 빌드/실행 시켜 응답값을 콘솔에서 확인한다.
+
+3. 애플리케이션을 빌드/실행 시켜 응답값을 콘솔에서 확인한다.
 
 
 
