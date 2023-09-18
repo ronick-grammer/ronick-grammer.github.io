@@ -1,8 +1,6 @@
 ---
 title:  "[iOS] Group Activities를 활용한 실시간 자료공유"
 excerpt: "[iOS] Group Activities를 활용한 실시간 자료공유"
-toc: false
-toc_sticky: false
 
 header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
