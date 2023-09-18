@@ -134,9 +134,7 @@ cd "${SRCROOT}/${TARGET_NAME}"
 위의 ```API.swift``` 파일을 살펴보면 위에서 생성했던 쿼리의 내용에 맞게 구조체가 구현되어 있는 것을 볼 수 있다. 쿼리문의 내용을 변경하고 빌드를 하면 그 즉시 ```API.swift```의 내용이 이에 맞게 반영한다.
 
 ### 쿼리 테스트하기
-위에서 생성한 ```API.swift```안의 operation을 사용하기 위해서는 ```ApolloClient``` 인스턴스를 생성해야한다. <br>
-ApolloClient 는 위에서 생성한 ```API.swift```내의 operation 코드를 사용하여 서버와 네트워크 통신을 진행한다. <br>
-그리고 ApolloClient는 싱글톤으로 생성되는 것이 권장된다.
+위에서 생성한 ```API.swift```안의 operation을 사용하기 위해서는 ```ApolloClient``` 인스턴스를 생성해야한다. ApolloClient 는 위에서 생성한 ```API.swift```내의 operation 코드를 사용하여 서버와 네트워크 통신을 진행한다. 그리고 ApolloClient는 싱글톤으로 생성되는 것이 권장된다.
 
 1. ```Network.swift``` 만들고 아래의 코드를 붙여넣는다.
 
